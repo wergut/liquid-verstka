@@ -1,0 +1,32 @@
+<% var data = {
+title: "Каталог | Заголовок",
+author: "mws",
+home: "Главная",
+curpage: "Каталог"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<%= _.template(require('./../includes/breadcrumb.html').default)(data) %>
+
+
+        <section class="auth">
+            <div class="auth_wrapper">
+                <form action="" class="enter_form">
+                    <h3>Вход</h3>
+                    <div class="enter_form-wrapper">
+                        <h5>Телефон или Email:</h5>
+                        <input type="text" name="phone">
+                    </div>
+                    <div class="enter_form-wrapper">
+                        <h5>Пароль:</h5>
+                        <input type="password" name="password">
+                    </div>
+                    <button type="submit">Войти</button>
+                    <a href="">Забыли пароль?</a>
+                </form>
+                <div class="auth_reg">
+                    <span>Первый раз? Пройдите </span> <a href="">регистрацию</a>
+                </div>
+            </div>
+        </section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

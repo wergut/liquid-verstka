@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="../../scss/pages/_catalog-inner.scss"><% var data = {
+title: "Каталог | Заголовок",
+author: "mws",
+home: "Главная",
+curpage: "Каталог"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<%= _.template(require('./../includes/breadcrumb.html').default)(data) %>
+
+<div class="catalog-page">
+    <div class="container">
+        <div class="col-12">
+            <h1>Категории товаров</h1>
+        </div>
+        <div class="catalog">
+            <div class="col-12">
+                <div class="col-3 col-m-6">
+                    <div class="catalog-item">
+                        <div class="catalog-links-list">
+                            <a href="#">Автоаксессуары и автохимия</a>
+                            <a href="#">Автомобили грузовые и специал...</a>
+                            <a href="#">Автомобили легковые</a>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="../img/catalog-img1.png" alt="">
+                        </div>
+                        <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
+                    </div>
+                </div>
+                <div class="col-3 col-m-6">
+                    <div class="catalog-item">
+                        <div class="catalog-links-list">
+                            <a href="#">Автоаксессуары и автохимия</a>
+                            <a href="#">Автомобили грузовые и специал...</a>
+                            <a href="#">Автомобили легковые</a>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="../img/product_card2.png" alt="">
+                        </div>
+                        <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
+                    </div>
+                </div>
+                <div class="col-3 col-m-6">
+                    <div class="catalog-item">
+                        <div class="catalog-links-list">
+                            <a href="#">Автоаксессуары и автохимия</a>
+                            <a href="#">Автомобили грузовые и специал...</a>
+                            <a href="#">Автомобили легковые</a>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="../img/catalog-img1.png" alt="">
+                        </div>
+                        <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
+                    </div>
+                </div>
+                <div class="col-3 col-m-6">
+                    <div class="catalog-item">
+                        <div class="catalog-links-list">
+                            <a href="#">Автоаксессуары и автохимия</a>
+                            <a href="#">Автомобили грузовые и специал...</a>
+                            <a href="#">Автомобили легковые</a>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="../img/catalog-img1.png" alt="">
+                        </div>
+                        <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
+                    </div>
+                </div>
+                <div class="col-3 col-m-6">
+                    <div class="catalog-item">
+                        <div class="catalog-links-list">
+                            <a href="#">Автоаксессуары и автохимия</a>
+                            <a href="#">Автомобили грузовые и специал...</a>
+                            <a href="#">Автомобили легковые</a>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="../img/catalog-img1.png" alt="">
+                        </div>
+                        <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
+                    </div>
+                </div>
+                <div class="col-3 col-m-6">
+                    <div class="catalog-item">
+                        <div class="catalog-links-list">
+                            <a href="#">Медицинские расходные матер...</a>
+                            <a href="#">Медицинское оборудование, инс...</a>
+                            <a href="#">Весоизмерительное оборудование</a>
+                            <a href="#">Газовое и топливное оборудование</a>
+                            <a href="#">Горнодобывающее и перерабат...</a>
+                            <a href="#">Грузоподъемное  оборудование ...</a>
+                            <a href="#">ДВС универсального назначения</a>
+                            <a href="#">Деревообрабатывающее оборуд...</a>
+                            <a href="#">Железнодорожное оборудование</a>
+                            <a href="#">Звуковое, световое оборудование</a>
+                            <a href="#">Инструмент ручной, электрическ...</a>
+                            <a href="#">Коммунальное оборудование</a>
+                            <a href="#">Котельное оборудование</a>
+                            <a href="#">Лабораторное оборудование</a>
+                            <a class="catalog-more" data-fancybox href="#hidden">Показать ещё</a>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="../img/catalog-img1.png" alt="">
+                        </div>
+                        <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/popup-catalog.html').default)(data) %>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

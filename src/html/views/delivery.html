@@ -1,0 +1,106 @@
+<% var data = {
+title: "Каталог | Заголовок",
+author: "mws",
+home: "Главная",
+curpage: "Каталог"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+        <section class="about_delivery">
+            <div class="container">
+                <h1 class="delivery_wrapper-title">
+                    Доставка
+                </h1>
+                <h3 class="delivery_wrapper-subtitle">
+                    Политика доставки
+                </h3>
+                <p class="delivery_wrapper-text">
+                    Все заказы обрабатываются в течение 1-7 рабочих дней (исключая выходные и праздничные дни)
+                    после
+                    получения электронного письма с подтверждением заказа. Вы получите еще одно уведомление,
+                    когда
+                    ваш заказ будет отправлен.
+                </p>
+            </div>
+        </section>
+        <section class="delivery_info">
+            <div class="container">
+                <div class="delivery_info-wrapper">
+                    <div class="delivery_info-img">
+                        <img src="img/delivery.png" alt="">
+                    </div>
+                    <div class="delivery_info-inner">
+                        <h3 class="delivery_info-inner-title">
+                            Размеры доставки
+                        </h3>
+
+                        <div class="deliver_info-material">
+                            <ul>
+                                <li>
+                                    Мы предоставляем несколько вариантов размеров доставки на выбор:
+                                </li>
+                                <li>
+                                    Поддон 1200*800*100 <br>
+                                    Поддон 1200*1000*100
+                                </li>
+                                <li>
+                                    Европаллет 800*1200*145
+                                </li>
+                                <li>
+                                    Грузовик 1.5 - 1.7 тонн <br>
+                                    Грузовик 3.5 тонн<br>
+                                    Грузовик 5 тонн<br>
+                                    Грузовик 10-15 тонн
+                                </li>
+                                <li>
+                                    Еврофура 20-22 тонны
+                                </li>
+                                <li>
+                                    Контейнер 22 тонны<br>
+                                    Контейнер 26 тонн<br>
+                                    Контейнер 30 тонн<br>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tech_support">
+            <div class="container">
+                <div class="tech_support-wrapper">
+                    <div class="tech_support-inner">
+                        <div class="tech_support-title">
+                            Возникли вопросы?
+                        </div>
+                        <div class="tech_support-info">
+                            <div class="tech_support-tel-title">
+                                Номер горячей линии
+                            </div>
+                            <div class="tech_support-nummber">
+                                <a href="">
+                                    8 (800) 555-35-35
+                                </a>
+                            </div>
+                            <div class="tech_support-mail-title">
+                                Почта для вопросов
+                            </div>
+                            <div class="tech_support-mail">
+                                <a href="">
+                                    info.liquidationmarket@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" class="help_form tech_support_form">
+                        <input type="text" name="e-mail" placeholder="Email">
+                        <input type="text" name="name" placeholder="Имя">
+                        <input type="text" name="how-can-help" placeholder="Чем мы можем помочь?">
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

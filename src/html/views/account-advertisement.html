@@ -1,0 +1,104 @@
+<% var data = {
+title: "Личный кабинет | Мои объявления",
+author: "mws",
+home: "Главная",
+curpage: "Личный кабинет"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+
+<section class="account-section">
+    <div class="container">
+        <div class="col-12">
+            <h1>Личный кабинет</h1>
+            <h2>Мои ставки</h2>
+        </div>
+        <div class="col-8">
+            <div class="account-inner advertisement-inner">
+                <div class="info">
+                    <h3>Каталог</h3>
+                    <a href="#" class="btn-blue">Добавить объявление</a>
+                </div>
+                <div class="catalog-wrapper">
+                    <div class="catalog-item">
+                        <div class="img-wrapper">
+                            <img src="/img/delivery.png" alt="">
+                        </div>
+                        <div class="info-wrapper">
+                            <div class="item-info">
+                                <div class="item-title">Электролобзик WESTER
+                                    <span>20 штук</span>
+                                </div>
+                                <p>Номер объявления:
+                                    <span>55672</span>
+                                </p>
+                                <p>Создано:
+                                    <span>5 янв. 16:07</span>
+                                </p>
+                            </div>
+                            <div class="item-info">
+                                <div class="item-title">Цена:
+                                    <span>70 000 ₽</span>
+                                </div>
+                                <div class="item-title">Кол-во:
+                                    <span class="quantity">11 шт</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="img-wrapper">
+                            <img src="/img/delivery.png" alt="">
+                        </div>
+                        <div class="info-wrapper">
+                            <div class="item-info">
+                                <div class="item-title">Электролобзик WESTER
+                                    <span>20 штук</span>
+                                </div>
+                                <p>Номер объявления:
+                                    <span>55672</span>
+                                </p>
+                                <p>Создано:
+                                    <span>5 янв. 16:07</span>
+                                </p>
+                            </div>
+                            <div class="item-info">
+                                <div class="item-title">Цена:
+                                    <span>300 000 ₽</span>
+                                </div>
+                                <div class="item-title">Кол-во:
+                                    <span class="quantity">Не указано</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="navigation">
+                <a href="#" class="nav-item">Сведения о компании</a>
+                <a href="#" class="nav-item">Настройка аккаунта</a>
+                <a href="#" class="nav-item active">Мои ставки</a>
+                <a href="#" class="nav-item">Мои объявления</a>
+                <a href="#" class="nav-item">Избранное</a>
+                <a href="#" class="nav-item">Уведомления</a>
+                <a href="#" class="nav-item">Корзина</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

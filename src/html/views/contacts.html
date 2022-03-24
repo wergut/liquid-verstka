@@ -1,0 +1,83 @@
+<% var data = {
+title: "Контакты | Заголовок",
+author: "mws",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts_wrapper">
+                    <h2 class="contacts_title">
+                        Контактная информация
+                    </h2>
+                    <p class="contacts_subtitle">
+                        Пишите и звоните нам. Для нас очень важно общение с нашими клиентами
+                    </p>
+                    <div class="contacts_content">
+                        <div class="contacts_content-left">
+                            <div class="contacts_item">
+                                <h5>
+                                    Номер горячей линии
+                                </h5>
+                                <a href="tel:8 (800) 555-35-35">
+                                    8 (800) 555-35-35
+                                </a>
+                            </div>
+                            <div class="contacts_item">
+                                <h5>
+                                    Прием звонков с 7:00 до 23:00
+                                </h5>
+                                <h5>
+                                    Понедельник - Воскресенье
+                                </h5>
+                            </div>
+                            <div class="contacts_item">
+                                <h5>
+                                    Почта для заказов
+
+                                </h5>
+                                <a href="mailto:zakaz.liquidationmarket@gmail.com">
+                                    zakaz.liquidationmarket@gmail.com
+                                </a>
+                            </div>
+                            <div class="contacts_item">
+                                <h5>
+                                    Почта для вопросов
+
+                                </h5>
+                                <a href="mailto:info.liquidationmarket@gmail.com">
+                                    info.liquidationmarket@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contacts_content-right">
+                            <form action="" class="question_form">
+                                <div class="question_form-inner">
+                                    <span>Email</span>
+                                    <input type="text" name="e-mail">
+                                </div>
+                                <div class="question_form-inner">
+                                    <span>ФИО</span>
+                                    <input type="text" name="ФИО">
+                                </div>
+                                <div class="question_form-inner">
+                                    <span>Телефон</span>
+                                    <input type="text" name="phone">
+                                </div>
+                                <div class="question_form-inner">
+                                    <span>Комментарий</span>
+                                    <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <a data-fancybox href="#hidden">Задать вопрос</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <div class="contacts-popup" style="display: none;" id="hidden">
+        <div class="title">Вопрос успешно отправлен!</div>
+        <p>Ваш вопрос был отправлен к нам в тех. поддержку. Ожидайте получения письма на почту, которую вы указывали в заявке.</p>
+        <a href="#">Готово</a>
+    </div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

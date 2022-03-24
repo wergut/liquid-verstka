@@ -1,0 +1,81 @@
+<% var data = {
+title: "Личный кабинет | Настройки аккаунта",
+author: "mws",
+home: "Главная",
+curpage: "Личный кабинет"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+
+<section class="account-section">
+    <div class="container">
+        <div class="col-12">
+            <h1>Личный кабинет</h1>
+            <h2>Настройки аккаунта</h2>
+        </div>
+        <div class="col-8">
+            <div class="account-inner account-settings">
+                <div class="items-wrapper">
+                    <h3>Общая информация</h3>
+                    <div class="item-wrapper">
+                        <div class="item-title">ФИО</div>
+                        <input type="text">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">Логин</div>
+                        <input type="text">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">Телефон</div>
+                        <input type="text">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">Email</div>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="items-wrapper">
+                    <h3>Пароль</h3>
+                    <div class="item-wrapper">
+                        <div class="item-title">Текущий пароль</div>
+                        <input type="text">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">Новый пароль</div>
+                        <input type="text">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">Новый пароль подтверждение</div>
+                        <input type="text">
+                    </div>
+                </div>
+                <a class="btn-blue" href="#">Сохранить</a>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="navigation">
+                <a href="#" class="nav-item">Сведения о компании</a>
+                <a href="#" class="nav-item active">Настройка аккаунта</a>
+                <a href="#" class="nav-item">Мои ставки</a>
+                <a href="#" class="nav-item">Мои объявления</a>
+                <a href="#" class="nav-item">Избранное</a>
+                <a href="#" class="nav-item">Уведомления</a>
+                <a href="#" class="nav-item">Корзина</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

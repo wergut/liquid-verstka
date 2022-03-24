@@ -1,0 +1,26 @@
+<% var data = {
+title: "404 | Заголовок",
+author: "mws",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+        <section class="page_404">
+            <div class="container">
+                <div class="col-12">
+                    <h2>
+                        Ошибка 404
+                    </h2>
+                </div>
+                <div class="col-12">
+                    <p>
+                        К сожалению, запрашиваемая страница не найдена. Возможно, вы перешли по ссылке, в которой была
+                        допущена ошибка, или ресурс был удален. Перейдите на главную страницу.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <a href="index.html">
+                        Перейти на главную страницу
+                    </a>
+                </div>
+            </div>
+        </section>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
