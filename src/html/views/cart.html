@@ -1,0 +1,136 @@
+<% var data = {
+title: "Личный кабинет | Сведения о компании",
+author: "mws",
+home: "Главная",
+curpage: "Личный кабинет"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+
+<section class="account-section cart-section">
+    <div class="container">
+        <form action="">
+            <div class="col-12 cart-title">
+                <h1>Корзина</h1>
+                <span class="cart-id"><span>№</span>xxxx-xxxx-xxxx</span>
+            </div>
+            <div class="col-12 cart-checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span>Выделить все</span>
+                </label>
+            </div>
+            <div class="col-9 col-m-12">
+                <div class="account-cart">
+                    <div class="cart-titles">
+                        <div class="col-8">
+                            <div class="title">Наименование</div>
+                        </div>
+                        <div class="col-1">
+                            <div class="title">Цена</div>
+                        </div>
+                        <div class="col-3">
+                            <div class="title">Кол-во</div>
+                        </div>
+                    </div>
+                    <div class="cart-items">
+                        <div class="cart-item">
+                            <div class="col-3">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox">
+                                </label>
+                                <div class="img-wrapper">
+                                    <img src="img/cart-item.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="info">
+                                    <div class="title">Iphone Xr уцененные</div>
+                                    <p>2020-2022 года, 64-256 гб, 10 штук</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="item-info item-price">240 000 ₽</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="item-info item-qty">1 лот</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="icons-wrapper">
+                                    <i class="add-favorite active"></i>
+                                    <i class="remove-item"></i>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="cart-item">
+                            <div class="col-3">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox">
+                                </label>
+                                <div class="img-wrapper">
+                                    <img src="img/cart-item1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="info">
+                                    <div class="title">BMW 5 series седан</div>
+                                    <p>Хорошее состояние240 л.с.</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="item-info item-price">4 290 000 ₽</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="item-info item-qty">1 ед.</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="icons-wrapper">
+                                    <i class="add-favorite"></i>
+                                    <i class="remove-item"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="continue-shop" href="#">Продолжить покупку</a>
+                </div>
+            </div>
+            <div class="col-3 col-m-12">
+                <div class="cart-order">
+                    <div class="title">Ваш заказ</div>
+                    <div class="cart-info">
+                        <div class="item">
+                            Выбрано товаров:
+                            <span>3 шт.</span>
+                        </div>
+                        <div class="item">
+                            Вес заказа:
+                            <span>1.8 т</span>
+                        </div>
+                        <div class="item">
+                            Общая стоимость:
+                            <span>4 530 000 ₽</span>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <input placeholder="Введите промокод" type="text">
+                        <input type="submit" value="Оформить заказ">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

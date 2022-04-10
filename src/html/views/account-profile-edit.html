@@ -1,0 +1,96 @@
+<% var data = {
+title: "Личный кабинет | Сведения о компании",
+author: "mws",
+home: "Главная",
+curpage: "Личный кабинет"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+
+<section class="account-section">
+    <div class="container">
+        <div class="col-12">
+            <h1>Личный кабинет</h1>
+            <h2>Сведения о компании</h2>
+        </div>
+        <div class="col-8 col-m-12">
+            <div class="account-inner company-info company-info-edit">
+                <form action="">
+                    <div class="img-wrapper">
+                        <img src="img/account-avatar.png" alt="">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">Название организации</div>
+                        <input type="text" value="ООО “Детройт”">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">Тип организации</div>
+                        <input type="text" value="Юридическое лицо">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">Город</div>
+                        <input type="text" value="Воронеж">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">Регион</div>
+                        <input type="text" value="Воронежская область">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">Email</div>
+                        <input type="text" value="titawe5324@ningame.com">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">Телефоны</div>
+                        <input type="text" value="+7 917 526-30-84">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">Юридический адрес</div>
+                        <textarea class="textarea" rows="2">Город Воронеж, улица Труда 47б, 4 этаж, офис 13</textarea>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">Почтовый индекс</div>
+                        <input type="text" value="170000">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">ИНН</div>
+                        <input type="text" value="836277184309">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">ОГРН</div>
+                        <input type="text" value="10347234104801">
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="item-title">КПП</div>
+                        <input type="text" value="771238762">
+                    </div>
+                    <input class="btn-blue" type="submit" value="Сохранить">
+                </form>
+            </div>
+        </div>
+        <div class="col-4 col-m-12">
+            <div class="navigation">
+                <a href="#" class="nav-item active">Сведения о компании</a>
+                <a href="#" class="nav-item">Настройка аккаунта</a>
+                <a href="#" class="nav-item">Мои ставки</a>
+                <a href="#" class="nav-item">Мои объявления</a>
+                <a href="#" class="nav-item">Избранное</a>
+                <a href="#" class="nav-item">Уведомления</a>
+                <a href="#" class="nav-item">Корзина</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

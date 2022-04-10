@@ -1,0 +1,151 @@
+<% var data = {
+title: "Личный кабинет | Сведения о компании",
+author: "mws",
+home: "Главная",
+curpage: "Личный кабинет"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+
+<section class="add-advertisement">
+    <form action="">
+        <div class="container">
+            <div class="col-12">
+                <h1>Добавление объявления</h1>
+            </div>
+            <div class="col-12">
+                <div class="item-wrapper">
+                    <div class="title">Наименование</div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="item-wrapper">
+                    <div class="title">Краткое описание</div>
+                    <textarea rows="3"></textarea>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="items-wrapper">
+                    <div class="item-wrapper custom-item">
+                        <div class="title">Категория товара</div>
+                        <select name="" id=""></select>
+                    </div>
+                    <div class="item-wrapper custom-item">
+                        <div class="title">Подкатегория</div>
+                        <select name="" id=""></select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="items-wrapper">
+                    <div class="item-wrapper custom-item">
+                        <div class="title">Продавец</div>
+                        <input type="text">
+                    </div>
+                    <div class="item-wrapper custom-item">
+                        <div class="title">Состояние</div>
+                        <select name="" id=""></select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="items-wrapper">
+                    <div class="item-wrapper custom-item">
+                        <div class="title">Цена</div>
+                        <input type="text">
+                    </div>
+                    <div class="item-wrapper custom-item">
+                        <div class="title">Минимальная ставка</div>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="item-wrapper">
+                    <div class="title">Рекомендованная розничная цена</div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="items-wrapper">
+                    <div class="item-wrapper custom-item">
+                        <div class="title">Колличество единиц</div>
+                        <input type="text">
+                    </div>
+                    <div class="item-wrapper custom-item">
+                        <div class="title">Общий вес</div>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="item-wrapper">
+                    <div class="title">Единицы измерения</div>
+                    <select name="" id=""></select>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="item-wrapper">
+                    <div class="title">Расположение товара</div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="items-wrapper">
+                    <div class="item-wrapper custom-item">
+                        <div class="title">Кто осуществляет доставку</div>
+                        <select name="" id=""></select>
+                    </div>
+                    <div class="item-wrapper custom-item">
+                        <div class="title">Способ доставки</div>
+                        <select name="" id=""></select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="items-wrapper">
+                    <div class="item-wrapper custom-item">
+                        <div class="title">Размер доставки</div>
+                        <select name="" id=""></select>
+                    </div>
+                    <div class="item-wrapper custom-item">
+                        <div class="title">Предпочитаемый способ оплаты</div>
+                        <select name="" id=""></select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="item-wrapper">
+                    <div class="title">Описание</div>
+                    <textarea rows="8">Полное описание товара, характеристики, размеры, детали состояния...</textarea>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <label>Мультизагрузка файлов:</label>
+                        <input type="file" id="fileMulti" name="fileMulti[]" multiple>
+                    </div>
+                    <div class="row">
+                        <span id="outputMulti"></span>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

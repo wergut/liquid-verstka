@@ -12,7 +12,7 @@ curpage: "Оформление заказа"
             <h1>Заказ товара</h1>
         </div>
         <div class="col-12">
-            <div class="ordering-items">
+            <div class="ordering-items mob-step-1">
                 <div class="ordering-title">Выберите способ получения</div>
                 <div class="ordering-item">
                     <label class="input-title">Город*</label>
@@ -49,7 +49,7 @@ curpage: "Оформление заказа"
                     </div>
                 </div>
             </div>
-            <div class="ordering-items">
+            <div class="ordering-items mob-step-2">
                 <div class="ordering-title">Ваши личные данные</div>
                 <div class="ordering-item wide">
                     <label class="input-title">Фамилия и имя*</label>
@@ -63,55 +63,14 @@ curpage: "Оформление заказа"
                     <label class="input-title">Телефон*</label>
                     <input required class="input" type="text">
                 </div>
-            </div>
-            <div class="ordering-items payment-items">
-                <div class="ordering-title">Ваши личные данные</div>
-                <div class="ordering-item">
-                    <label class="input-title">Номер карты*</label>
-                    <input required class="input" type="text">
-                </div>
-                <div class="ordering-item">
-                    <label class="input-title">Имя на карте*</label>
-                    <input required class="input" type="text">
-                </div>
-                <div class="ordering-item">
-                    <label class="input-title">Дата истечения срока действия*</label>
-                    <input required class="input" type="text">
-                </div>
-                <div class="ordering-item">
-                    <label class="input-title">CVV*</label>
-                    <input required class="input" type="text">
-                </div>
-                <div class="payment-checkboxes ordering-checkboxes">
-                    <div class="checkbox">
-                        <input checked class="custom-radio" name="payment-mehod" type="radio" id="card" value="card">
-                        <label for="card">Оплата картой</label>
+                <div class="col-12">
+                    <div class="ordering-total">
+                        Общая стоимость товара:
+                        <span>8 449 р.</span>
                     </div>
-                    <div class="checkbox">
-                        <input class="custom-radio" name="payment-mehod" type="radio" id="sber-business" value="sber-business">
-                        <label for="sber-business">СберБизнес</label>
-                    </div>
-                    <div class="checkbox">
-                        <input class="custom-radio" name="payment-mehod" type="radio" id="paypal" value="paypal">
-                        <label for="paypal">PayPal</label>
-                    </div>
-                    <div class="checkbox">
-                        <input class="custom-radio" name="payment-mehod" type="radio" id="transfer" value="transfer">
-                        <label for="transfer">Перевод на расчётный счёт</label>
-                    </div>
+                    <input type="submit" class="btn-blue" value="Оформить заказ">
                 </div>
             </div>
-        </div>
-        <div class="col-12">
-            <div class="ordering-total">
-                Общее количество товара:
-                <span>3</span>
-            </div>
-            <div class="ordering-total">
-                Общая стоимость товара:
-                <span>8 449 р.</span>
-            </div>
-            <input type="submit" class="btn-blue" value="Оформить заказ">
         </div>
     </div>
 </form>

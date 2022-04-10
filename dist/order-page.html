@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="/resources/demos/style.css" />
@@ -88,7 +92,7 @@
             <h1>Заказ товара</h1>
           </div>
           <div class="col-12">
-            <div class="ordering-items">
+            <div class="ordering-items mob-step-1">
               <div class="ordering-title">Выберите способ получения</div>
               <div class="ordering-item">
                 <label class="input-title">Город*</label>
@@ -125,7 +129,7 @@
                 </div>
               </div>
             </div>
-            <div class="ordering-items">
+            <div class="ordering-items mob-step-2">
               <div class="ordering-title">Ваши личные данные</div>
               <div class="ordering-item wide">
                 <label class="input-title">Фамилия и имя*</label>
@@ -139,61 +143,14 @@
                 <label class="input-title">Телефон*</label>
                 <input required class="input" type="text" />
               </div>
-            </div>
-            <div class="ordering-items payment-items">
-              <div class="ordering-title">Ваши личные данные</div>
-              <div class="ordering-item">
-                <label class="input-title">Номер карты*</label>
-                <input required class="input" type="text" />
-              </div>
-              <div class="ordering-item">
-                <label class="input-title">Имя на карте*</label>
-                <input required class="input" type="text" />
-              </div>
-              <div class="ordering-item">
-                <label class="input-title">Дата истечения срока действия*</label>
-                <input required class="input" type="text" />
-              </div>
-              <div class="ordering-item">
-                <label class="input-title">CVV*</label>
-                <input required class="input" type="text" />
-              </div>
-              <div class="payment-checkboxes ordering-checkboxes">
-                <div class="checkbox">
-                  <input checked class="custom-radio" name="payment-mehod" type="radio" id="card" value="card" />
-                  <label for="card">Оплата картой</label>
+              <div class="col-12">
+                <div class="ordering-total">
+                  Общая стоимость товара:
+                  <span>8 449 р.</span>
                 </div>
-                <div class="checkbox">
-                  <input
-                    class="custom-radio"
-                    name="payment-mehod"
-                    type="radio"
-                    id="sber-business"
-                    value="sber-business"
-                  />
-                  <label for="sber-business">СберБизнес</label>
-                </div>
-                <div class="checkbox">
-                  <input class="custom-radio" name="payment-mehod" type="radio" id="paypal" value="paypal" />
-                  <label for="paypal">PayPal</label>
-                </div>
-                <div class="checkbox">
-                  <input class="custom-radio" name="payment-mehod" type="radio" id="transfer" value="transfer" />
-                  <label for="transfer">Перевод на расчётный счёт</label>
-                </div>
+                <input type="submit" class="btn-blue" value="Оформить заказ" />
               </div>
             </div>
-          </div>
-          <div class="col-12">
-            <div class="ordering-total">
-              Общее количество товара:
-              <span>3</span>
-            </div>
-            <div class="ordering-total">
-              Общая стоимость товара:
-              <span>8 449 р.</span>
-            </div>
-            <input type="submit" class="btn-blue" value="Оформить заказ" />
           </div>
         </div>
       </form>
@@ -201,28 +158,46 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-upper">
-          <div class="footer_nav">
+          <div class="col-12">
             <h4 class="footer_title">
               О нас
             </h4>
+          </div>
+          <div class="footer_nav col-7 col-m-12">
             <div class="footer_nav-wrapper">
-              <div class="footer_nav-item">
-                <a href="">Инвесторам</a>
-                <a href="">Наша история</a>
-                <a href="">Новости и пресса</a>
-              </div>
-              <div class="footer_nav-item">
-                <a href="">Договор оферты</a>
-                <a href="">Реквизиты</a>
-                <a href="">Доставка</a>
-              </div>
-              <div class="footer_nav-item">
-                <a href="">Связаться с нами</a>
-                <a href="">Политика конфиденциальности</a>
-              </div>
+              <ul class="footer-nav-item">
+                <li>
+                  <a href="#">Инвесторам</a>
+                </li>
+                <li>
+                  <a href="#">Наша история</a>
+                </li>
+                <li>
+                  <a href="#">Новости и пресса</a>
+                </li>
+              </ul>
+              <ul class="footer-nav-item">
+                <li>
+                  <a href="#">Договор оферты</a>
+                </li>
+                <li>
+                  <a href="#">Реквизиты</a>
+                </li>
+                <li>
+                  <a href="#">Доставка</a>
+                </li>
+              </ul>
+              <ul class="footer-nav-item">
+                <li>
+                  <a href="#">Связаться с нами</a>
+                </li>
+                <li>
+                  <a href="#">Политика конфиденциальности</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="follow_us">
+          <div class="follow_us col-2 col-m-12">
             <h4 class="footer_title">
               Следите за нами
             </h4>
@@ -257,7 +232,7 @@
               </a>
             </div>
           </div>
-          <div class="partner">
+          <div class="partner col-3 col-m-12">
             <h4 class="footer_title">
               Партнер маркетплейс
             </h4>
@@ -282,5 +257,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

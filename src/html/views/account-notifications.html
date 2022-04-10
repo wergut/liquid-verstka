@@ -1,0 +1,72 @@
+<% var data = {
+title: "Личный кабинет | Сведения о компании",
+author: "mws",
+home: "Главная",
+curpage: "Личный кабинет"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+
+<section class="account-section">
+    <div class="container">
+        <div class="col-12">
+            <h1>Личный кабинет</h1>
+            <h2>Мои ставки</h2>
+        </div>
+        <div class="col-8 col-m-12">
+            <div class="account-inner account-notifications">
+                <form action="">
+                    <div class="items-wrapper">
+                        <div class="item">
+                            <div class="title">Рассылка новостей</div>
+                            <select name="" id="">
+                                <option selected value="">Присылать оповещения</option>
+                                <option value="">Не присылать оповещения</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <div class="title">Новые ставки</div>
+                            <select name="" id="">
+                                <option selected value="">Присылать оповещения</option>
+                                <option value="">Не присылать оповещения</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <div class="title">Новые ставки конкурентов</div>
+                            <select name="" id="">
+                                <option selected value="">Присылать оповещения</option>
+                                <option value="">Не присылать оповещения</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+        <div class="col-4 col-m-12">
+            <div class="navigation">
+                <a href="#" class="nav-item">Сведения о компании</a>
+                <a href="#" class="nav-item">Настройка аккаунта</a>
+                <a href="#" class="nav-item">Мои ставки</a>
+                <a href="#" class="nav-item">Мои объявления</a>
+                <a href="#" class="nav-item">Избранное</a>
+                <a href="#" class="nav-item active">Уведомления</a>
+                <a href="#" class="nav-item">Корзина</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

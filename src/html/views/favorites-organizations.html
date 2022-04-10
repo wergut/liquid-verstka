@@ -1,0 +1,98 @@
+<% var data = {
+title: "Личный кабинет | Сведения о компании",
+author: "mws",
+home: "Главная",
+curpage: "Личный кабинет"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+
+<section class="account-section">
+    <div class="container">
+        <div class="col-12">
+            <h1>Личный кабинет</h1>
+            <h2>Мои ставки</h2>
+        </div>
+        <div class="col-8 col-m-12">
+            <div class="account-tab-list">
+                <div class="list-detail">
+                    <a href="favourite-lots.html" aria-current="page">Лоты</a>
+                    <a class="active" href="favorites-organizations.html">Организации</a>
+                </div> 
+            </div>
+            <div class="account-inner favorites-organizations">
+                <div class="organization-items">
+                    <div class="organization-item">
+                        <div class="img-wrapper">
+                            <img src="img/org1.png" alt="">
+                        </div>
+                        <div class="info-wrapper">
+                            <div class="item-title">Группа НММК</div>
+                            <div class="item-title">Объявлений на продажу: 
+                                <span class="quantity">72</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organization-item">
+                        <div class="img-wrapper">
+                            <img src="img/org1.png" alt="">
+                        </div>
+                        <div class="info-wrapper">
+                            <div class="item-title">АО “Гайский КоП”</div>
+                            <div class="item-title">Объявлений на продажу: 
+                                <span class="quantity">72</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organization-item">
+                        <div class="img-wrapper">
+                            <img src="img/org1.png" alt="">
+                        </div>
+                        <div class="info-wrapper">
+                            <div class="item-title">ПАО “КазаньМеталДиз”</div>
+                            <div class="item-title">Объявлений на продажу: 
+                                <span class="quantity">3</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="organization-item">
+                        <div class="img-wrapper">
+                            <img src="img/org1.png" alt="">
+                        </div>
+                        <div class="info-wrapper">
+                            <div class="item-title">ООО “Палис”</div>
+                            <div class="item-title">Объявлений на продажу: 
+                                <span class="quantity">142</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-m-12">
+            <div class="navigation">
+                <a href="#" class="nav-item">Сведения о компании</a>
+                <a href="#" class="nav-item">Настройка аккаунта</a>
+                <a href="#" class="nav-item">Мои ставки</a>
+                <a href="#" class="nav-item">Мои объявления</a>
+                <a href="#" class="nav-item active">Избранное</a>
+                <a href="#" class="nav-item">Уведомления</a>
+                <a href="#" class="nav-item">Корзина</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

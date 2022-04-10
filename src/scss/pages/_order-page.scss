@@ -187,3 +187,16 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 540px) {
+  .ordering {
+    .ordering-items {
+      .ordering-checkboxes {
+        .checkbox {
+          width: 100%;
+          justify-content: flex-start!important;
+        }
+      }
+    }
+  }
+}
