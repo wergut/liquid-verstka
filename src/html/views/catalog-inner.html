@@ -7,6 +7,13 @@ curpage: "Автомобили легковые"
 <%= _.template(require('./../includes/header.html').default)(data) %>
 <%= _.template(require('./../includes/breadcrumb.html').default)(data) %>
 
+<style>
+    .footer {
+        position: relative;
+        z-index: 0;
+    }
+</style>
+
 
 <section class="catalog-inner">
     <div class="container">
@@ -29,7 +36,7 @@ curpage: "Автомобили легковые"
             <div class="mobile-filter-btn">Фильтры</div>
             <%= _.template(require('./../includes/filter.html').default)(data) %>
         </div>
-        <div class="col-9 col-m-12">
+        <div class="col-9 col-m-12 z-index-0">
             <div class="items-wrapper">
                 <div class="col-4 col-m-6">
                     <div class="item">

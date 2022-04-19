@@ -14,12 +14,25 @@
 
 	.items-wrapper {
 		padding: 0;
+		.col-m-6 {
+			&:not(:last-child) .item{
+				margin-right: 30px;
+			}
+		}
 		.item {
 			padding: 20px 8px;
 			min-width: 171px;
+			max-width: 264px;
+		}
+	}
+}
+
+
+@media (max-width: 540px) {
+	.items-wrapper {
+		.item {
 			max-width: 100%;
 		}
-
 		.col-m-6:nth-child(odd) .item{
 			margin-right: 7px;
 		}

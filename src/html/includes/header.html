@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
@@ -19,6 +19,12 @@
             <div class="logo mobile-logo">
                 <a href="index.html">
                     <img src="img/logo.png">
+                </a>
+            </div>
+            <div class="pc-hidden">
+                <a href="cart.html" class="cart-wrapper">
+                    <i class="cart-ico"></i>
+                    <span>2</span>
                 </a>
             </div>
             <div class="mobile-btn"></div>
@@ -73,6 +79,12 @@
                     <input type="text" name="search" placeholder="Найти...">
                     <button type="submit">Найти</button>
                 </form>
+                <div class="mobile-hidden">
+                    <a href="cart.html" class="cart-wrapper">
+                        <i class="cart-ico"></i>
+                        <span>2</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

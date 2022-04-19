@@ -7,135 +7,213 @@ curpage: "Личный кабинет"
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
 
-
 <section class="add-advertisement">
-    <form action="">
+    <form action="" id="formSteps">
         <div class="container">
-            <div class="col-12">
-                <h1>Добавление объявления</h1>
-            </div>
-            <div class="col-12">
-                <div class="item-wrapper">
-                    <div class="title">Наименование</div>
-                    <input type="text">
+
+
+            <div class="mob-step-1 mob-step">
+                <div class="col-12">
+                    <h1>Добавление объявления</h1>
                 </div>
-            </div>
-            <div class="col-12">
-                <div class="item-wrapper">
-                    <div class="title">Краткое описание</div>
-                    <textarea rows="3"></textarea>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="items-wrapper">
-                    <div class="item-wrapper custom-item">
-                        <div class="title">Категория товара</div>
-                        <select name="" id=""></select>
-                    </div>
-                    <div class="item-wrapper custom-item">
-                        <div class="title">Подкатегория</div>
-                        <select name="" id=""></select>
+                <div class="pc-hidden">
+                    <div class="mobile-steps-status">
+                        <p>Добавление товара 1 из 5 шагов</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-12">
-                <div class="items-wrapper">
-                    <div class="item-wrapper custom-item">
-                        <div class="title">Продавец</div>
-                        <input type="text">
-                    </div>
-                    <div class="item-wrapper custom-item">
-                        <div class="title">Состояние</div>
-                        <select name="" id=""></select>
+                <div class="col-12">
+                    <div class="item-wrapper">
+                        <div class="title">Наименование</div>
+                        <input placeholder="Наименование" type="text" required>
                     </div>
                 </div>
-            </div>
-            <div class="col-12">
-                <div class="items-wrapper">
-                    <div class="item-wrapper custom-item">
-                        <div class="title">Цена</div>
-                        <input type="text">
-                    </div>
-                    <div class="item-wrapper custom-item">
-                        <div class="title">Минимальная ставка</div>
-                        <input type="text">
+                <div class="col-12">
+                    <div class="item-wrapper">
+                        <div class="title">Краткое описание</div>
+                        <textarea required placeholder="Краткое описание" rows="3" ></textarea>
                     </div>
                 </div>
-            </div>
-            <div class="col-12">
-                <div class="item-wrapper">
-                    <div class="title">Рекомендованная розничная цена</div>
-                    <input type="text">
+                <div class="col-12">
+                    <div class="items-wrapper">
+                        <div class="item-wrapper custom-item">
+                            <div class="title">Категория товара</div>
+                            <select name="" id="" required>
+                                <option selected="" value="">Выбрать</option>
+                                <option value="1">Товар 1</option>
+                                <option value="2">Товар 2</option>
+                            </select>
+                        </div>
+                        <div class="item-wrapper custom-item">
+                            <div class="title">Подкатегория</div>
+                            <select name="" id="" required>
+                                <option selected="" value="">Выбрать</option>
+                                <option value="3">Товар 1</option>
+                                <option value="4">Товар 2</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
-            <div class="col-12">
-                <div class="items-wrapper">
+
+
+            <div class="mob-step-2 mob-step">
+                <div class="pc-hidden">
+                    <div class="mobile-steps-status">
+                        <p>Добавление характеристик 2 из 5 шагов</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="items-wrapper">
+                        <div class="item-wrapper custom-item">
+                            <div class="title">Продавец</div>
+                            <input class="placehold-hidden" required placeholder="Продавец" type="text">
+                        </div>
+                        <div class="item-wrapper custom-item">
+                            <div class="title">Состояние</div>
+                            <select  name="" id="">
+                                <option selected="" value="">Выбрать</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="items-wrapper">
+                        <div class="item-wrapper custom-item">
+                            <div class="title">Рекомендованная розничная цена</div>
+                            <input class="placehold-hidden" required placeholder="Цена" type="text">
+                        </div>
+                        <div class="item-wrapper custom-item">
+                            <div class="title">Минимальная ставка</div>
+                            <input class="placehold-hidden" required placeholder="Минимальная ставка" type="text">
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+
+            <div class="mob-step-3 mob-step">
+                <div class="pc-hidden">
+                    <div class="mobile-steps-status">
+                        <p>Объем и вес товара 3 из 5 шагов</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="items-wrapper">
+                        <div class="item-wrapper custom-item">
+                            <div class="title">Колличество единиц</div>
+                            <input class="placehold-hidden" required placeholder="Колличество единиц" type="text">
+                        </div>
+                        <div class="item-wrapper custom-item">
+                            <div class="title">Общий вес</div>
+                            <input class="placehold-hidden" required placeholder="Общий вес" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
                     <div class="item-wrapper custom-item">
-                        <div class="title">Колличество единиц</div>
-                        <input type="text">
-                    </div>
-                    <div class="item-wrapper custom-item">
-                        <div class="title">Общий вес</div>
-                        <input type="text">
+                        <div class="title">Единицы измерения</div>
+                        <select name="" id="" >
+                            <option selected="" value="">Выбрать</option>
+                        </select>
                     </div>
                 </div>
-            </div>
-            <div class="col-12">
-                <div class="item-wrapper">
-                    <div class="title">Единицы измерения</div>
-                    <select name="" id=""></select>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="item-wrapper">
-                    <div class="title">Расположение товара</div>
-                    <input type="text">
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="items-wrapper">
-                    <div class="item-wrapper custom-item">
-                        <div class="title">Кто осуществляет доставку</div>
-                        <select name="" id=""></select>
-                    </div>
-                    <div class="item-wrapper custom-item">
-                        <div class="title">Способ доставки</div>
-                        <select name="" id=""></select>
+                <div class="col-12">
+                    <div class="item-wrapper">
+                        <div class="title">Расположение товара</div>
+                        <input class="placehold-hidden" required placeholder="Расположение товара" type="text">
                     </div>
                 </div>
+               
             </div>
-            <div class="col-12">
-                <div class="items-wrapper">
-                    <div class="item-wrapper custom-item">
-                        <div class="title">Размер доставки</div>
-                        <select name="" id=""></select>
-                    </div>
-                    <div class="item-wrapper custom-item">
-                        <div class="title">Предпочитаемый способ оплаты</div>
-                        <select name="" id=""></select>
+
+
+            <div class="mob-step-4 mob-step">
+                <div class="pc-hidden">
+                    <div class="mobile-steps-status">
+                        <p>Доставка товара 4 из 5 шагов</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-12">
-                <div class="item-wrapper">
-                    <div class="title">Описание</div>
-                    <textarea rows="8">Полное описание товара, характеристики, размеры, детали состояния...</textarea>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="container">
-                    <div class="row">
-                        <label>Мультизагрузка файлов:</label>
-                        <input type="file" id="fileMulti" name="fileMulti[]" multiple>
+                <div class="col-12">
+                    <div class="items-wrapper">
+                        <div class="item-wrapper custom-item">
+                            <div class="title">Кто осуществляет доставку</div>
+                            <select name="" id="">
+                                <option selected="" value="">Выбрать</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="row">
+                </div>
+                <div class="col-12">
+                    <div class="items-wrapper">
+                        <div class="item-wrapper custom-item">
+                            <div class="title">Размер доставки</div>
+                            <select name="" id="">
+                                <option selected="" value="">Выбрать</option>
+                            </select>
+                        </div>
+                        <div class="item-wrapper custom-item">
+                            <div class="title">Предпочитаемый способ оплаты</div>
+                            <select name="" id="">
+                                <option selected value="">Выбрать</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="mob-step-5 mob-step">
+                <div class="pc-hidden">
+                    <div class="mobile-steps-status">
+                        <p>Описание и фотография 5 из 5 шагов</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="item-wrapper">
+                        <div class="title">Описание</div>
+                        <textarea placeholder="Полное описание товара, характеристики, размеры, детали состояния..." required rows="6"></textarea>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="item-wrapper upload-files">
+                        <div class="title">Изображения</div>
+                        <div class="desc">Не более 8 изображений</div>
+                        <input type="file" id="fileMulti" name="fileMulti[]" multiple required>
                         <span id="outputMulti"></span>
+                        <input type="submit" name="" class="submit-btn" value="Добавить изображения">
                     </div>
-                </div>
-            </div>  
+                    <div class="item-wrapper upload-files">
+                        <input type="file" >
+                        <input type="submit" name="" class="submit-btn" value="Добавить манифест">
+                    </div>                
+                </div>                
+            </div>
+
+
         </div>
+
+        <!-- Circles which indicates the steps of the form: -->
+      <!--   <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div> -->
+        <div class="mobile-hidden">
+            <input type="submit" name="" class="submit-btn" value="Добавить объявление">
+        </div>
+
     </form>
+     <div class="pc-hidden pg-m pg-m">
+        <button class="pg-m prev-step" id="prevBtn" onclick="nextPrev(-1)" >Назад</button>
+        <button class="pg-m next-step" id="nextBtn" onclick="nextPrev(1)" >Далее</button>
+    </div>
 </section>
+
+           
 
 
 

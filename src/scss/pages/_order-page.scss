@@ -117,6 +117,10 @@
         height: 34px;
         border-radius: 5px;
         border: 1px solid #000000;
+
+        &::placeholder {
+          color: #fff;
+        }
       }
     }
     .ordering-item.wide {
@@ -158,6 +162,7 @@
     }
   }
   .ordering-total {
+    margin-top: 60px;
     font-family: "Inter";
     font-weight: 500;
     font-size: 24px;
@@ -190,12 +195,43 @@
 
 @media (max-width: 540px) {
   .ordering {
+    padding: 30px 0 50px;
+    .container {
+      padding: 0;
+    }
+    .ordering-total {
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
     .ordering-items {
+      margin-bottom: 0;
+      padding: 0 16px;
+      .ordering-item {
+        .input-title {
+          display: none;
+        }
+        input {
+        padding: 10px;
+        height: 51px;
+          &::placeholder {
+            color: #808080;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 500;
+          }
+        }
+      }
       .ordering-checkboxes {
+        margin: 20px 0;
         .checkbox {
           width: 100%;
           justify-content: flex-start!important;
         }
+      }
+      input[type="submit"] {
+        max-width: 100%;
       }
     }
   }

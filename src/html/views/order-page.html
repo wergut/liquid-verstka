@@ -6,74 +6,96 @@ curpage: "Оформление заказа"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<form action="" class="ordering">
-    <div class="container">
-        <div class="col-12">
-            <h1>Заказ товара</h1>
-        </div>
-        <div class="col-12">
-            <div class="ordering-items mob-step-1">
-                <div class="ordering-title">Выберите способ получения</div>
-                <div class="ordering-item">
-                    <label class="input-title">Город*</label>
-                    <input required class="input" type="text">
-                </div>
-                <div class="ordering-item">
-                    <label class="input-title">Улица*</label>
-                    <input required class="input" type="text">
-                </div>
-                <div class="ordering-item">
-                    <label class="input-title">Квартира</label>
-                    <input class="input" type="text">
-                </div>
-                <div class="ordering-item">
-                    <label class="input-title">Индекс*</label>
-                    <input required class="input" type="text">
-                </div>
-                <div class="ordering-checkboxes">
-                    <div class="checkbox">
-                        <input checked class="custom-radio" name="delivery-method" type="radio" id="cdek" value="cdek">
-                        <label for="cdek">СДЭК</label>
+<section class="ordering">
+    <form action="" id="formSteps">
+        <div class="container">
+            <div class="col-12">
+                <div class="mob-step-1 mob-step">
+                    <div class="col-12">
+                        <h1>Заказ товара</h1>
                     </div>
-                    <div class="checkbox">
-                        <input class="custom-radio" name="delivery-method" type="radio" id="mail" value="mail">
-                        <label for="mail">Почта России</label>
+                    <div class="pc-hidden">
+                        <div class="mobile-steps-status">
+                            <p>Способ получения 1 из 2 шагов</p>
+                        </div>
                     </div>
-                    <div class="checkbox">
-                        <input class="custom-radio" name="delivery-method" type="radio" id="courier" value="courier">
-                        <label for="courier">Личный курьер</label>
+                    <div class="ordering-items">
+                        <div class="ordering-title">Выберите способ получения</div>
+                        <div class="ordering-item">
+                            <label class="input-title">Город*</label>
+                            <input placeholder="Город*" required class="input" type="text">
+                        </div>
+                        <div class="ordering-item">
+                            <label class="input-title">Улица*</label>
+                            <input placeholder="Улица*" required class="input" type="text">
+                        </div>
+                        <div class="ordering-item">
+                            <label class="input-title">Квартира</label>
+                            <input placeholder="Квартира" class="input" type="text">
+                        </div>
+                        <div class="ordering-item">
+                            <label class="input-title">Индекс*</label>
+                            <input placeholder="Индекс*" required class="input" type="text">
+                        </div>
+                        <div class="ordering-checkboxes">
+                            <div class="checkbox">
+                                <input checked class="custom-radio" name="delivery-method" type="radio" id="cdek" value="cdek">
+                                <label for="cdek">СДЭК</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="custom-radio" name="delivery-method" type="radio" id="mail" value="mail">
+                                <label for="mail">Почта России</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="custom-radio" name="delivery-method" type="radio" id="courier" value="courier">
+                                <label for="courier">Личный курьер</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="custom-radio" name="delivery-method" type="radio" id="pickup" value="pickup">
+                                <label for="pickup">Самовывоз</label>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="mob-step-2 mob-step">
+                    <div class="pc-hidden">
+                        <div class="mobile-steps-status">
+                            <p>Способ получения 2 из 2 шагов</p>
+                        </div>
                     </div>
-                    <div class="checkbox">
-                        <input class="custom-radio" name="delivery-method" type="radio" id="pickup" value="pickup">
-                        <label for="pickup">Самовывоз</label>
+                    <div class="ordering-items">
+                        <div class="ordering-title">Ваши личные данные</div>
+                        <div class="ordering-item wide">
+                            <label class="input-title">Фамилия и имя*</label>
+                            <input placeholder="Фамилия и имя*" required class="input" type="text">
+                        </div>
+                        <div class="ordering-item">
+                            <label class="input-title">Email адрес*</label>
+                            <input placeholder="Email адрес*" required class="input" type="text">
+                        </div>
+                        <div class="ordering-item">
+                            <label class="input-title">Телефон*</label>
+                            <input placeholder="Телефон*" required class="input" type="text">
+                        </div>
+                        <div class="col-12">
+                            <div class="ordering-total">
+                                Общая стоимость товара:
+                                <span>8 449 р.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="ordering-items mob-step-2">
-                <div class="ordering-title">Ваши личные данные</div>
-                <div class="ordering-item wide">
-                    <label class="input-title">Фамилия и имя*</label>
-                    <input required class="input" type="text">
-                </div>
-                <div class="ordering-item">
-                    <label class="input-title">Email адрес*</label>
-                    <input required class="input" type="text">
-                </div>
-                <div class="ordering-item">
-                    <label class="input-title">Телефон*</label>
-                    <input required class="input" type="text">
-                </div>
-                <div class="col-12">
-                    <div class="ordering-total">
-                        Общая стоимость товара:
-                        <span>8 449 р.</span>
-                    </div>
-                    <input type="submit" class="btn-blue" value="Оформить заказ">
-                </div>
-            </div>
         </div>
+        <div class="mobile-hidden">
+            <input type="submit" name="" class="submit-btn" value="Добавить объявление">
+        </div>
+    </form>
+    <div class="pc-hidden pg-m pg-m">
+        <button class="pg-m prev-step" id="prevBtn" onclick="nextPrev(-1)" >Назад</button>
+        <button class="pg-m next-step" id="nextBtn" onclick="nextPrev(1)" >Далее</button>
     </div>
-</form>
+</section>
 
 
 

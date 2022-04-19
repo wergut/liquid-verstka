@@ -1,0 +1,145 @@
+<% var data = {
+title: "Добавление объявления | предосмотр",
+author: "mws",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+       
+
+<section class="advertisiment-preview">
+    <div class="container">
+        <div class="col-12">
+            <h1>Добавление объявления</h1>
+            <h2>Предпросмотр объявления</h2>
+        </div>
+        <div class="col-4 col-m-12 order-m-1">
+            <div class="preview-block">
+                <h3>Изображения</h3>
+                <div class="imgs-wrapper">
+                    <div class="thumb">
+                        <img src="img/preview-item.png" alt="">
+                    </div>
+                     <div class="thumb">
+                        <img src="img/preview-item.png" alt="">
+                    </div>
+                     <div class="thumb">
+                        <img src="img/preview-item.png" alt="">
+                    </div>
+                     <div class="thumb">
+                        <img src="img/preview-item.png" alt="">
+                    </div>
+                     <div class="thumb">
+                        <img src="img/preview-item.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="preview-block">
+                <h3>Манифест</h3>
+                <p class="desc">Не загружен</p>
+            </div>
+        </div>
+        <div class="col-4 col-m-12">
+             <div class="preview-block">
+                <h3>Наименование</h3>
+                <p class="desc">Инструментный-Центри-Сейф, Хаски, Линкольн Электрик</p>
+            </div>
+             <div class="preview-block">
+                <h3>Категория товара</h3>
+                <p class="desc">Оборудование, приборы, инструменты</p>
+            </div>
+             <div class="preview-block">
+                <h3>Продавец</h3>
+                <p class="desc">ООО “ОренГрупп”</p>
+            </div>
+             <div class="preview-block">
+                <h3>Рекомендованная розничная цена</h3>
+                <p class="desc">27 000 ₽</p>
+            </div>
+             <div class="preview-block">
+                <h3>Колличество единиц</h3>
+                <p class="desc">14</p>
+            </div>
+             <div class="preview-block">
+                <h3>Единицы измерения</h3>
+                <p class="desc">Штука</p>
+            </div>
+             <div class="preview-block">
+                <h3>Расположение товара</h3>
+                <p class="desc">Москва, склад Алтуфьево, Алтуфьевское шоссе, 79A, с25</p>
+            </div>
+             <div class="preview-block">
+                <h3>Размер доставки</h3>
+                <p class="desc">Грузовик 1.5 - 1.7 тонн</p>
+            </div>
+             <div class="preview-block">
+                <h3>Описание</h3>
+                <p class="desc">
+                    Особенности устройства включают в себя:
+                    SFW205BXC Огнеупорный и водонепроницаемый сейф объемом 2,0 куб. фута с биометрическим замком
+                    24 дюйма (высота) x 16 дюймов (ширина)
+                    Большой гарнизон, Сти
+                    K5 Премиум 5 фунтов на квадратный дюйм
+                    Всего в лоте 14 предметов.
+                </p>
+            </div>
+        </div>
+        <div class="col-4 col-m-12">
+            <div class="preview-block">
+                <h3>Краткое описание</h3>
+                <p class="desc">Специальный сейф для хранения</p>
+            </div>
+            <div class="preview-block">
+                <h3>Подкатегория</h3>
+                <p class="desc">Складское оборудование</p>
+            </div>
+             <div class="preview-block">
+                <h3>Состояние</h3>
+                <p class="desc">Новое</p>
+            </div>
+            <div class="preview-block">
+                <h3>Минимальная ставка</h3>
+                <p class="desc">12 000 ₽</p>
+            </div>
+            <div class="preview-block">
+                <h3>Общий вес</h3>
+                <p class="desc">453 кг</p>
+            </div>
+            <div class="preview-block">
+                <h3>Кто осуществляет доставку</h3>
+                <p class="desc">Покупатель</p>
+            </div>
+             <div class="preview-block">
+                <h3>Предпочитаемый способ оплаты</h3>
+                <p class="desc">Перевод на расчётный счёт</p>
+            </div>
+        </div>
+        <div class="col-12 order-m-1">
+            <div class="col-12">
+                <a href="#" class="edit-btn">Редактировать</a>
+            </div>
+            <div class="col-12">
+                <div class="desc-for-input">
+                    <p>
+                        Проверьте правильность введенных данных.
+                    </p>
+                    <p>
+                        Если все введено корректно, нажмите на кнопку ниже.
+                    </p>
+                </div>
+                <input type="submit" value="Добавить объявление">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
