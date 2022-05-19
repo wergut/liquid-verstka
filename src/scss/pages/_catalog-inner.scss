@@ -87,23 +87,46 @@
       margin-left: 30px;
     }
     .item {
+      position: relative;
       background: #F4F5FA;
       border: 1px solid #000000;
       border-radius: 5px;
-      padding: 30px 25px;
       margin-bottom: 30px;
       max-width: 264px;
       width: 100%;
+      padding: 30px 0;
+      .icon-wrapper {
+        .add-favorite {
+          background-image: url(../img/icons/product-add-favorites.svg);
+        }
+        .add-favorite.active {
+          background-image: url(../img/icons/add-favorites-active.svg);
+        }
+         i {
+          right: 23px;
+          top: 16px;
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: 50%;
+        }
+      }
       .img-wrapper {
-        height: 174px;
-        margin-bottom: 25px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #000;
+        margin-bottom: 15px;
         img {
+          height: 174px;
           width: 100%;
           height: inherit;
           object-fit: cover;
+          padding: 0 25px;
         }
       }
       .item-info {
+        padding: 0 25px;
         font-family: "Inter";
         font-size: 18px;
         line-height: 20px;
@@ -142,6 +165,41 @@
 }
 .mobile-btn-more {
   display: none;
+}
+.empty-catalog {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  .img-wrapper {
+    margin-bottom: 15px;
+    img {
+      max-width: 121px;
+      height: 121px;
+      width: 100%;
+    }
+  }
+  .title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+
+    a {
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #367AF5;
+    }
+  }
 }
 
 
@@ -226,6 +284,23 @@
     width: 100%;
     padding: 15px;
     text-align: center;
+  }
+
+  .empty-catalog {
+    padding-top: 25px;
+    .img-wrapper {
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      max-width: 315px;
+    }
   }
 }
 

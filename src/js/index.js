@@ -51,17 +51,6 @@ $(document).ready(function() {
     });
 
 
-    //$('#nextBtn').on('click', function(){
-    //    $.fancybox.open({
-    //        src: '#poppup',
-    //        type: 'inline'
-    //    });
-    //})
-
-
-
-
-
 });
 
 

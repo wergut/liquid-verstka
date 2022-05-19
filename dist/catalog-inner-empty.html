@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../../scss/pages/_catalog-inner.scss" />
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -18,7 +17,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="/resources/demos/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <title>Каталог | Заголовок</title>
+    <title>Автомобили легковые | Заголовок</title>
   </head>
   <body>
     <header>
@@ -110,162 +109,207 @@
             </span>
             <span class="bc_sep">|</span>
             <span class="bc_link" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-              <a href="">Каталог</a>
+              <a href="">Автомобили легковые</a>
               <meta itemprop="item" content="" />
-              <meta itemprop="name" content="Каталог" />
+              <meta itemprop="name" content="Автомобили легковые" />
               <meta itemprop="position" content="2" />
             </span>
           </nav>
         </div>
       </div>
 
-      <div class="catalog-page">
+      <style>
+        .footer {
+          position: relative;
+          z-index: 0;
+        }
+      </style>
+
+      <section class="catalog-inner">
         <div class="container">
           <div class="col-12">
-            <h1>Категории товаров</h1>
+            <form class="search-form" action="">
+              <select name="" id="">
+                <option value="Везде" selected>Везде</option>
+              </select>
+              <div class="search-wrapper">
+                <i class="search-ico-btn"></i>
+                <input class="search-input" placeholder="Наименованию лота, название" type="search" />
+              </div>
+              <input type="submit" value="Поиск" />
+            </form>
           </div>
-          <div class="catalog">
-            <div class="col-12">
-              <div class="col-3 col-m-6">
-                <div class="catalog-item">
-                  <div class="catalog-links-list">
-                    <a href="#">Автоаксессуары и автохимия</a>
-                    <a href="#">Автомобили грузовые и специал...</a>
-                    <a href="#">Автомобили легковые</a>
-                  </div>
-                  <div class="img-wrapper">
-                    <img src="img/catalog-img1.png" alt="" />
-                  </div>
-                  <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
+          <div class="col-12">
+            <h1>Автомобили легковые</h1>
+          </div>
+          <div class="col-3 col-m-12">
+            <div class="mobile-filter-btn">Фильтры</div>
+            <form class="filter-catalog" action="">
+              <div class="pc-hidden">
+                <i class="close-btn"></i>
+                <div class="mob-filter-block">
+                  <div class="title">Фильтры</div>
+                  <div class="clear-filters">Очистить фильтры</div>
                 </div>
               </div>
-              <div class="col-3 col-m-6">
-                <div class="catalog-item">
-                  <div class="catalog-links-list">
-                    <a href="#">Автоаксессуары и автохимия</a>
-                    <a href="#">Автомобили грузовые и специал...</a>
-                    <a href="#">Автомобили легковые</a>
-                  </div>
-                  <div class="img-wrapper">
-                    <img src="img/product_card2.png" alt="" />
-                  </div>
-                  <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
-                </div>
-              </div>
-              <div class="col-3 col-m-6">
-                <div class="catalog-item">
-                  <div class="catalog-links-list">
-                    <a href="#">Автоаксессуары и автохимия</a>
-                    <a href="#">Автомобили грузовые и специал...</a>
-                    <a href="#">Автомобили легковые</a>
-                  </div>
-                  <div class="img-wrapper">
-                    <img src="img/catalog-img1.png" alt="" />
-                  </div>
-                  <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
-                </div>
-              </div>
-              <div class="col-3 col-m-6">
-                <div class="catalog-item">
-                  <div class="catalog-links-list">
-                    <a href="#">Автоаксессуары и автохимия</a>
-                    <a href="#">Автомобили грузовые и специал...</a>
-                    <a href="#">Автомобили легковые</a>
-                  </div>
-                  <div class="img-wrapper">
-                    <img src="img/catalog-img1.png" alt="" />
-                  </div>
-                  <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
-                </div>
-              </div>
-              <div class="col-3 col-m-6">
-                <div class="catalog-item">
-                  <div class="catalog-links-list">
-                    <a href="#">Автоаксессуары и автохимия</a>
-                    <a href="#">Автомобили грузовые и специал...</a>
-                    <a href="#">Автомобили легковые</a>
-                  </div>
-                  <div class="img-wrapper">
-                    <img src="img/catalog-img1.png" alt="" />
-                  </div>
-                  <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
-                </div>
-              </div>
-              <div class="col-3 col-m-6">
-                <div class="catalog-item">
-                  <div class="catalog-links-list">
-                    <div class="links-wrapper">
-                      <a class="catalog-link" href="#">Медицинские расходные матер...</a>
-                      <a class="catalog-link" href="#">Медицинское оборудование, инс...</a>
-                      <a class="catalog-link" href="#">Весоизмерительное оборудование</a>
-                      <a class="catalog-link" href="#">Газовое и топливное оборудование</a>
-                      <a class="catalog-link" href="#">Горнодобывающее и перерабат...</a>
-                      <a class="catalog-link" href="#">Грузоподъемное оборудование ...</a>
-                      <a class="catalog-link" href="#">ДВС универсального назначения</a>
+              <div class="filter--box show">
+                <div class="filter__drop-section price-filter">
+                  <div class="filter__drop-title">Цена</div>
+                  <!-- <p>
+                                <input type="text" class="amount" readonly>
+                            </p> -->
+                  <div class="filter-drop-item">
+                    <div class="filter-value-wrapper">
+                      <div class="filter-value">
+                        От
+                        <span class="lower" id="lower"></span>
+                      </div>
+                      <div class="filter-value">
+                        До
+                        <span class="upper" id="upper"></span>
+                      </div>
                     </div>
-                    <a class="catalog-more" data-fancybox href="#hidden">Показать ещё</a>
+                    <div id="price-filter"></div>
+                    <div class="line-fake"></div>
                   </div>
-                  <div class="img-wrapper">
-                    <img src="img/catalog-img1.png" alt="" />
-                  </div>
-                  <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
                 </div>
               </div>
+              <div class="filter--box show">
+                <div class="filter__drop-section filter__mechanism">
+                  <div class="filter__drop-heading filter__heading-block">
+                    <div class="filter__drop-title">Состояние</div>
+                  </div>
+                  <div class="checkbox-wrap filter-drop-item">
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter--box show">
+                <div class="filter__drop-section filter__mechanism">
+                  <div class="filter__drop-heading filter__heading-block">
+                    <div class="filter__drop-title">Состояние</div>
+                  </div>
+                  <div class="checkbox-wrap filter-drop-item">
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter--box show">
+                <div class="filter__drop-section filter__mechanism">
+                  <div class="filter__drop-heading filter__heading-block">
+                    <div class="filter__drop-title">Состояние</div>
+                  </div>
+                  <div class="checkbox-wrap filter-drop-item">
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                    <div class="checkbox-inner">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span>Новое</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--                    <button id="apply_filter" class="filter__btn-purchase filter__btn"><span>Применить</span><span>Показать <span id="count-find"></span></span></button>-->
+              <!--                    <button type="reset" class="filter__btn-cancel filter__btn">Сбросить</button>-->
+            </form>
+          </div>
+          <div class="col-9 col-m-12 z-index-0">
+            <div class="empty-catalog">
+              <div class="img-wrapper">
+                <img src="img/icons/catalog-empty-ico.svg" alt="" />
+              </div>
+              <div class="title">Товары не найдены</div>
+              <p>
+                Попробуйте еще раз или перейдите в
+                <a href="#">каталог</a>
+              </p>
             </div>
+            <div class="items-wrapper"></div>
           </div>
         </div>
-      </div>
-
-      <div class="popup-catalog" style="display: none; width: 755px;" id="hidden">
-        <div class="close-btn">
-          <div class="leftright"></div>
-          <div class="rightleft"></div>
-        </div>
-        <div class="links-list">
-          <a href="#">Медицинские расходные материалы и одноразовые инструменты</a>
-          <a href="#">Медицинское оборудование, инструменты</a>
-          <a href="#">Весоизмерительное оборудование</a>
-          <a href="#">Газовое и топливное оборудование</a>
-          <a href="#">Горнодобывающее и перерабатывающее оборудование</a>
-          <a href="#">Грузоподъемное оборудование и машины, лифты</a>
-          <a href="#">ДВС универсального назначения</a>
-          <a href="#">Деревообрабатывающее оборудование</a>
-          <a href="#">Железнодорожное оборудование</a>
-          <a href="#">Звуковое, световое оборудование</a>
-          <a href="#">Инструмент ручной, электрический, гидравлический, пневматический</a>
-          <a href="#">Коммунальное оборудование</a>
-          <a href="#">Котельное оборудование</a>
-          <a href="#">Лабораторное оборудование</a>
-          <a href="#">Металлообрабатывающее оборудование</a>
-          <a href="#">Металлургическое и кузнечно-прессовое оборудование</a>
-          <a href="#">Насосы, компрессоры, гидравлика, пневматика</a>
-          <a href="#">Нефте, газодобывающее, буровое оборудование</a>
-          <a href="#">Оборудование для автозаправочных станций (АЗС)</a>
-          <a href="#">Оборудование для автосервиса, ремонта и обслуживания автомобилей</a>
-          <a href="#">Оборудование для литья, обработки и переработки пластмасс</a>
-          <a href="#">Оборудование для обработки и очистки воды</a>
-          <a href="#">Оборудование для переработки отходов</a>
-          <a href="#">Оборудование для производства упаковки, упаковочное оборудование</a>
-          <a href="#">Оборудование для производства электротехнической продукции</a>
-          <a href="#">Оборудование для электростанций и производства энергии</a>
-          <a href="#">Парикмахерское оборудование</a>
-          <a href="#">Пищевое оборудование</a>
-          <a href="#">Подшипники и детали узлов</a>
-          <a href="#">Полиграфическое оборудование</a>
-          <a href="#">Противопожарное, охранное, спасательное оборудование</a>
-          <a href="#">Прочее промышленное оборудование</a>
-          <a href="#">Резервуарное оборудование</a>
-          <a href="#">Сварачное и паяльное оборудование</a>
-          <a href="#">Сельхозоборудование, животноводческое оборудование</a>
-          <a href="#">Складское оборудование</a>
-          <a href="#">Строительное, дорожное оборудование</a>
-          <a href="#">Фильтры и фильтроэлементы</a>
-          <a href="#">Химическое оборудование</a>
-          <a href="#">Холодильное оборудование</a>
-          <a href="#">Цепи, редукторы, вариаторы</a>
-          <a href="#">Швейное, ткацкое оборудование</a>
-        </div>
-      </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">

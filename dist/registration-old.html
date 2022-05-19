@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../../scss/pages/_catalog-inner.scss" />
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -18,7 +17,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="/resources/demos/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <title>Каталог | Заголовок</title>
+    <title>Регистрация | Заголовок</title>
   </head>
   <body>
     <header>
@@ -110,161 +109,152 @@
             </span>
             <span class="bc_sep">|</span>
             <span class="bc_link" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-              <a href="">Каталог</a>
+              <a href="">Регистрация</a>
               <meta itemprop="item" content="" />
-              <meta itemprop="name" content="Каталог" />
+              <meta itemprop="name" content="Регистрация" />
               <meta itemprop="position" content="2" />
             </span>
           </nav>
         </div>
       </div>
 
-      <div class="catalog-page">
+      <section class="reg">
         <div class="container">
-          <div class="col-12">
-            <h1>Категории товаров</h1>
-          </div>
-          <div class="catalog">
-            <div class="col-12">
-              <div class="col-3 col-m-6">
-                <div class="catalog-item">
-                  <div class="catalog-links-list">
-                    <a href="#">Автоаксессуары и автохимия</a>
-                    <a href="#">Автомобили грузовые и специал...</a>
-                    <a href="#">Автомобили легковые</a>
+          <form action="" class="reg_form" id="formSteps">
+            <div class="reg_form-inner">
+              <div class="mob-step-1 mob-step">
+                <h1 class="reg_title">Регистрация</h1>
+                <h3 class="reg_subtitle">Данные организации</h3>
+                <div class="pc-hidden">
+                  <div class="mobile-steps-status">
+                    <p>Данные организации 1 из 4 шагов</p>
                   </div>
-                  <div class="img-wrapper">
-                    <img src="img/catalog-img1.png" alt="" />
+                  <div class="reg-desc">
+                    <p>Регистрация бесплатная</p>
+                    <p>Вы регистрируетесь как <strong>продавец</strong>. Хотите быть <a href="#">покупателем</a>?</p>
                   </div>
-                  <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
+                </div>
+                <div class="reg_form-item">
+                  <span>Наименование организации*</span>
+                  <input placeholder="Наименование организации*" type="text" name="org_name" />
+                </div>
+                <div class="reg_form-item">
+                  <span>ИНН организации*</span>
+                  <input placeholder="ИНН организации*" type="text" name="INN" />
                 </div>
               </div>
-              <div class="col-3 col-m-6">
-                <div class="catalog-item">
-                  <div class="catalog-links-list">
-                    <a href="#">Автоаксессуары и автохимия</a>
-                    <a href="#">Автомобили грузовые и специал...</a>
-                    <a href="#">Автомобили легковые</a>
+              <div class="mob-step-2 mob-step">
+                <div class="pc-hidden">
+                  <div class="mobile-steps-status">
+                    <p>Данные организации 2 из 4 шагов</p>
                   </div>
-                  <div class="img-wrapper">
-                    <img src="img/product_card2.png" alt="" />
-                  </div>
-                  <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
                 </div>
-              </div>
-              <div class="col-3 col-m-6">
-                <div class="catalog-item">
-                  <div class="catalog-links-list">
-                    <a href="#">Автоаксессуары и автохимия</a>
-                    <a href="#">Автомобили грузовые и специал...</a>
-                    <a href="#">Автомобили легковые</a>
-                  </div>
-                  <div class="img-wrapper">
-                    <img src="img/catalog-img1.png" alt="" />
-                  </div>
-                  <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
+                <div class="reg_form-item">
+                  <span>ОГРН организации*</span>
+                  <input placeholder="ОГРН организации*" type="text" name="OQRN" />
                 </div>
-              </div>
-              <div class="col-3 col-m-6">
-                <div class="catalog-item">
-                  <div class="catalog-links-list">
-                    <a href="#">Автоаксессуары и автохимия</a>
-                    <a href="#">Автомобили грузовые и специал...</a>
-                    <a href="#">Автомобили легковые</a>
-                  </div>
-                  <div class="img-wrapper">
-                    <img src="img/catalog-img1.png" alt="" />
-                  </div>
-                  <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
+                <div class="reg_form-item">
+                  <span>КПП организации*</span>
+                  <input placeholder="КПП организации*" type="text" name="KPP" />
                 </div>
-              </div>
-              <div class="col-3 col-m-6">
-                <div class="catalog-item">
-                  <div class="catalog-links-list">
-                    <a href="#">Автоаксессуары и автохимия</a>
-                    <a href="#">Автомобили грузовые и специал...</a>
-                    <a href="#">Автомобили легковые</a>
-                  </div>
-                  <div class="img-wrapper">
-                    <img src="img/catalog-img1.png" alt="" />
-                  </div>
-                  <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
+                <div class="reg_form-item">
+                  <span>Город*</span>
+                  <input placeholder="Город*" type="text" name="city" />
                 </div>
-              </div>
-              <div class="col-3 col-m-6">
-                <div class="catalog-item">
-                  <div class="catalog-links-list">
-                    <div class="links-wrapper">
-                      <a class="catalog-link" href="#">Медицинские расходные матер...</a>
-                      <a class="catalog-link" href="#">Медицинское оборудование, инс...</a>
-                      <a class="catalog-link" href="#">Весоизмерительное оборудование</a>
-                      <a class="catalog-link" href="#">Газовое и топливное оборудование</a>
-                      <a class="catalog-link" href="#">Горнодобывающее и перерабат...</a>
-                      <a class="catalog-link" href="#">Грузоподъемное оборудование ...</a>
-                      <a class="catalog-link" href="#">ДВС универсального назначения</a>
-                    </div>
-                    <a class="catalog-more" data-fancybox href="#hidden">Показать ещё</a>
-                  </div>
-                  <div class="img-wrapper">
-                    <img src="img/catalog-img1.png" alt="" />
-                  </div>
-                  <div class="catalog-title">Автомобили, аксессуары, запчасти, транспорт</div>
+                <div class="reg_form-item">
+                  <span>Наименование организации*</span>
+                  <input placeholder="Наименование организации*" type="text" />
+                </div>
+                <div class="reg_form-item">
+                  <span>Фактический адрес*</span>
+                  <input placeholder="Фактический адрес" type="text" name="fact_adress" />
+                </div>
+                <div class="reg_form-item">
+                  <span>Юридический адрес*</span>
+                  <input placeholder="Юридический адрес*" type="text" name="yur_adress" />
+                </div>
+                <div class="reg_form-item">
+                  <span>Почтовый индекс*</span>
+                  <input placeholder="Почтовый индекс*" type="text" name="mail_index" />
+                </div>
+                <div class="reg_form-item">
+                  <span>Телефон*</span>
+                  <input placeholder="Телефон*" type="text" name="phone" />
+                </div>
+                <div class="reg_form-item">
+                  <span>Email</span>
+                  <input placeholder="Email" type="text" name="e-mail" />
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+            <h3 class="reg_subtitle reg_subtitle-color">
+              Данные руководителя
+            </h3>
+            <div class="reg_form-inner">
+              <div class="mob-step-3 mob-step">
+                <div class="pc-hidden">
+                  <div class="mobile-steps-status">
+                    <p>Данные организации 3 из 4 шагов</p>
+                  </div>
+                </div>
+                <div class="reg_form-item">
+                  <span>ФИО*</span>
+                  <input placeholder="ФИО*" type="text" name="ФИО" />
+                </div>
+                <div class="reg_form-item">
+                  <span>Должность*</span>
+                  <input placeholder="Должность*" type="text" name="post" />
+                </div>
+                <div class="reg_form-item">
+                  <span>Телефон*</span>
+                  <input placeholder="Телефон*" type="text" name="phone" />
+                </div>
+                <div class="reg_form-item">
+                  <span>КПП организации*</span>
+                  <input placeholder="КПП организации*" type="text" name="KPP" />
+                </div>
+                <div class="reg_form-item">
+                  <span>Email*</span>
+                  <input placeholder="Email*" type="text" name="e-mail" />
+                </div>
+              </div>
 
-      <div class="popup-catalog" style="display: none; width: 755px;" id="hidden">
-        <div class="close-btn">
-          <div class="leftright"></div>
-          <div class="rightleft"></div>
+              <div class="mob-step-4 mob-step">
+                <div class="pc-hidden">
+                  <div class="mobile-steps-status">
+                    <p>Данные организации 4 из 4 шагов</p>
+                  </div>
+                </div>
+                <div class="reg_form-item">
+                  <span>Придумайте пароль*</span>
+                  <input placeholder="Придумайте пароль*" required type="password" />
+                </div>
+                <div class="reg_form-item">
+                  <span>Повторите пароль*</span>
+                  <input placeholder="Повторите пароль*" required type="password" />
+                </div>
+              </div>
+            </div>
+            <div class="mobile-hidden">
+              <input class="submit-btn" type="submit" value="Зарегестрироваться" />
+            </div>
+          </form>
         </div>
-        <div class="links-list">
-          <a href="#">Медицинские расходные материалы и одноразовые инструменты</a>
-          <a href="#">Медицинское оборудование, инструменты</a>
-          <a href="#">Весоизмерительное оборудование</a>
-          <a href="#">Газовое и топливное оборудование</a>
-          <a href="#">Горнодобывающее и перерабатывающее оборудование</a>
-          <a href="#">Грузоподъемное оборудование и машины, лифты</a>
-          <a href="#">ДВС универсального назначения</a>
-          <a href="#">Деревообрабатывающее оборудование</a>
-          <a href="#">Железнодорожное оборудование</a>
-          <a href="#">Звуковое, световое оборудование</a>
-          <a href="#">Инструмент ручной, электрический, гидравлический, пневматический</a>
-          <a href="#">Коммунальное оборудование</a>
-          <a href="#">Котельное оборудование</a>
-          <a href="#">Лабораторное оборудование</a>
-          <a href="#">Металлообрабатывающее оборудование</a>
-          <a href="#">Металлургическое и кузнечно-прессовое оборудование</a>
-          <a href="#">Насосы, компрессоры, гидравлика, пневматика</a>
-          <a href="#">Нефте, газодобывающее, буровое оборудование</a>
-          <a href="#">Оборудование для автозаправочных станций (АЗС)</a>
-          <a href="#">Оборудование для автосервиса, ремонта и обслуживания автомобилей</a>
-          <a href="#">Оборудование для литья, обработки и переработки пластмасс</a>
-          <a href="#">Оборудование для обработки и очистки воды</a>
-          <a href="#">Оборудование для переработки отходов</a>
-          <a href="#">Оборудование для производства упаковки, упаковочное оборудование</a>
-          <a href="#">Оборудование для производства электротехнической продукции</a>
-          <a href="#">Оборудование для электростанций и производства энергии</a>
-          <a href="#">Парикмахерское оборудование</a>
-          <a href="#">Пищевое оборудование</a>
-          <a href="#">Подшипники и детали узлов</a>
-          <a href="#">Полиграфическое оборудование</a>
-          <a href="#">Противопожарное, охранное, спасательное оборудование</a>
-          <a href="#">Прочее промышленное оборудование</a>
-          <a href="#">Резервуарное оборудование</a>
-          <a href="#">Сварачное и паяльное оборудование</a>
-          <a href="#">Сельхозоборудование, животноводческое оборудование</a>
-          <a href="#">Складское оборудование</a>
-          <a href="#">Строительное, дорожное оборудование</a>
-          <a href="#">Фильтры и фильтроэлементы</a>
-          <a href="#">Химическое оборудование</a>
-          <a href="#">Холодильное оборудование</a>
-          <a href="#">Цепи, редукторы, вариаторы</a>
-          <a href="#">Швейное, ткацкое оборудование</a>
+        <div class="pc-hidden pg-m pg-m">
+          <button class="pg-m prev-step" id="prevBtn" onclick="nextPrev(-1)">Назад</button>
+          <button class="pg-m next-step" id="nextBtn" onclick="nextPrev(1)">Далее</button>
+          <p class="reg_text">
+            Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой
+            конфиденциальности
+          </p>
         </div>
+      </section>
+
+      <div class="contacts-popup reg-popup" style="display: none;" id="popup">
+        <div class="title">Заявка на регистрацию успешно отправлена!</div>
+        <p>Письмо о регистрации было отправлено на почтовый адрес xxxxxxxx123@gmail.com</p>
+        <p>Проверка компании из открытых источников может занимать несколько дней.</p>
+        <a href="#">Готово</a>
       </div>
     </main>
     <footer class="footer">

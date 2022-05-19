@@ -1,0 +1,202 @@
+<% var data = {
+title: "Регистрация | Заголовок",
+author: "mws",
+home: "Главная",
+curpage: "Регистрация"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<%= _.template(require('./../includes/breadcrumb.html').default)(data) %>
+
+
+        <section class="reg">
+            <div class="container">
+                <form action="" class="reg_form" id="formSteps">
+                	<div class="col-12">
+                		<div class="mobile-hidden">
+                			<div class="reg_title">Регистрация</div>
+                		</div>
+                	</div>
+                    <div class="col-6 col-m-12">
+                    	<div class="pc-hidden">
+                    		<div class="col-12">
+                    			<div class="mob-step-1 mob-step">
+                    				<div class="pc-hidden">
+                            			<div class="reg_title">Регистрация</div>
+                            		</div>
+                    				<div class="mobile-steps-status">
+                                    	<p>Данные организации 1 из 5 шагов</p>
+                                	</div>
+									<div class="reg-checkboxes-wrapper">
+                    					<div class="reg_subtitle reg-checkboxes-subtitle">Вариант регистрации</div>
+                    					<div class="reg-checkbox">
+                    						<input required class="input" type="radio" name="registration-option">
+                            				<label class="input-title">3 месяца - 15 500 ₽</label>	
+                        				</div>
+                        				<div class="reg-checkbox">
+                        					<input required class="input" type="radio" name="registration-option">
+                            				<label class="input-title">6 месяцев - 25 500 ₽ </label>
+                        				</div>
+                        				<div class="reg-checkbox">
+                        					<input required class="input" type="radio" name="registration-option">
+                            				<label class="input-title">12 месяцев - 40 500 ₽</label>
+                        				</div>
+                        				<div class="reg-checkbox">
+                        					<input required class="input" type="radio" name="registration-option">
+                            				<label class="input-title">Бесплатная (без возможности сделать ставку)</label> 		
+                        				</div>
+                        				<p>
+                    						Вы регистрируетесь как <strong>покупатель</strong>. Хотите быть <a href="#">продавцом</a>?
+                    					</p>
+                    				</div>
+                    			</div>
+                    		</div>
+                    	</div>
+                    	<div class="reg_subtitle">Данные организации</div>
+                    	<div class="reg_form-inner reg-form-left">
+                        <div class="mob-step-2 mob-step"> 
+                            <div class="pc-hidden">
+                                <div class="mobile-steps-status">
+                                    <p>Данные организации 2 из 5 шагов</p>
+                                </div>
+                            </div>
+                            <div class="reg_form-item">
+                                <span>Наименование организации*</span>
+                                <input placeholder="Наименование организации*"  type="text" name="org_name">
+                            </div>
+                            <div class="reg_form-item">
+                                <span>ИНН организации*</span>
+                                <input placeholder="ИНН организации*"  type="text" name="INN">
+                            </div>
+
+
+                        </div>
+                        <div class="mob-step-3 mob-step">
+                            <div class="pc-hidden">
+                            <div class="mobile-steps-status">
+                                <p>Данные организации 3 из 5 шагов</p>
+                            </div>
+                            </div>
+                            <div class="reg_form-item">
+                                <span>Город*</span>
+                                <input placeholder="Город*"  type="text" name="city">
+                            </div>
+                            <div class="reg_form-item">
+                                <span>Фактический адрес*</span>
+                                <input placeholder="Фактический адрес"  type="text" name="fact_adress">
+                            </div>
+                            <div class="reg_form-item">
+                                <span>Юридический адрес*</span>
+                                <input placeholder="Юридический адрес*"  type="text" name="yur_adress">
+                            </div>
+                            <div class="reg_form-item">
+                                <span>Телефон*</span>
+                                <input placeholder="Телефон*"  type="text" name="phone">
+                            </div>
+                            <div class="reg_form-item">
+                                <span>Email</span>
+                                <input placeholder="Email"  type="text" name="e-mail">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-6 col-m-12">  
+                    	<div class="reg_form-inner reg-form-right">
+                    		<div class="reg_subtitle">Данные организации</div>
+                    	    <div class="mob-step-4 mob-step">
+                    	        <div class="pc-hidden">
+                    	            <div class="mobile-steps-status">
+                    	                <p>Данные организации 4 из 5 шагов</p>
+                    	            </div>
+                    	        </div>
+                    	        <div class="reg_form-item">
+                    	            <span>ФИО*</span>
+                    	            <input placeholder="ФИО*"  type="text" name="ФИО">
+                    	        </div>
+                    	        <div class="reg_form-item">
+                    	            <span>Должность*</span>
+                    	            <input placeholder="Должность*"  type="text" name="post">
+                    	        </div>
+                    	        <div class="reg_form-item">
+                    	            <span>Телефон*</span>
+                    	            <input placeholder="Телефон*"  type="text" name="phone">
+                    	        </div>
+                    	        <div class="reg_form-item">
+                    	            <span>Email*</span>
+                    	            <input placeholder="Email*"  type="text" name="e-mail">
+                    	        </div>
+                    	    </div>
+                    	    <div class="mob-step-5 mob-step">
+                    	        <div class="pc-hidden">
+                    	            <div class="mobile-steps-status">
+                    	                <p>Данные организации 5 из 5 шагов</p>
+                    	            </div>
+                    	        </div>
+                    	        <div class="reg_form-item">
+                    	            <span>Придумайте пароль*</span>
+                    	            <input placeholder="Придумайте пароль*" required type="password">
+                    	        </div>
+                    	        <div class="reg_form-item">
+                    	            <span>Повторите пароль*</span>
+                    	            <input placeholder="Повторите пароль*" required type="password">
+                    	        </div>
+                    	    </div>
+                    	</div>
+                    </div> 
+                    <div class="mobile-hidden">
+                    	<div class="col-12">
+                    		<div class="reg-checkboxes-wrapper">
+                    			<div class="reg_subtitle reg-checkboxes-subtitle">Вариант регистрации</div>
+                    			<div class="reg-checkbox">
+                    				<input required class="input" type="radio" name="registration-option">
+                            		<label class="input-title">3 месяца - 15 500 ₽</label>	
+                        		</div>
+                        		<div class="reg-checkbox">
+                        			<input required class="input" type="radio" name="registration-option">
+                            		<label class="input-title">6 месяцев - 25 500 ₽ </label>
+                        		</div>
+                        		<div class="reg-checkbox">
+                        			<input required class="input" type="radio" name="registration-option">
+                            		<label class="input-title">12 месяцев - 40 500 ₽</label>
+                        		</div>
+                        		<div class="reg-checkbox">
+                        			<input required class="input" type="radio" name="registration-option">
+                            		<label class="input-title">Бесплатная (без возможности сделать ставку)</label> 		
+                        		</div>
+                        		<p>
+                    				Вы регистрируетесь как <strong>покупатель</strong>. Хотите быть <a href="#">продавцом</a>?
+                    			</p>
+                    		</div>
+                    	</div>
+                    </div>
+                    <div class="col-12">
+                    	<div class="mobile-hidden">
+                        	<input class="submit-btn" type="submit" value="Зарегистрироваться">
+                        	<p class="reg_text">
+                    			Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой
+                    			конфиденциальности
+                			</p>			
+                    	</div>
+                    </div>
+                </form>
+                </div>   
+            </div>
+            <div class="pc-hidden pg-m pg-m">
+                <button class="pg-m prev-step" id="prevBtn" onclick="nextPrev(-1)" >Назад</button>
+                <button class="pg-m next-step" id="nextBtn" onclick="nextPrev(1)" >Далее</button>
+                <p class="reg_text">
+                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой
+                    конфиденциальности
+                </p>
+            </div>
+        </section>
+
+
+<div class="contacts-popup reg-popup" style="display: none;" id="popup">
+    <div class="title">Заявка на регистрацию успешно отправлена!</div>
+    <p>Письмо о регистрации было отправлено на почтовый адрес xxxxxxxx123@gmail.com</p>
+    <p>Проверка компании из открытых источников может занимать несколько дней.</p>
+    <a href="#">Готово</a>
+</div>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

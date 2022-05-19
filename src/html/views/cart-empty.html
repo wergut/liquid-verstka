@@ -1,0 +1,41 @@
+<% var data = {
+title: "Личный кабинет | Сведения о компании",
+author: "mws",
+home: "Главная",
+curpage: "Личный кабинет"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+
+<section class="account-section cart-section">
+    <div class="container">
+        <div class="cart-empty">
+            <div class="img-wrapper">
+                <img src="/img/icons/cart-empty-ico.svg" alt="">
+            </div>
+            <div class="title">Корзина пуста</div>
+            <div class="desc">
+                <p>
+                    На данный момент ваша корзина пуста. 
+                    Посмотрите свои сохраненные аукционы или продолжите поиск желаемых аукционов.
+                </p>
+            </div>
+            <a class="blue-btn" href="#">Посмотреть сохраненные аукционы</a>
+            <a class="cart-link" href="#">Продолжить поиск аукционов</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
