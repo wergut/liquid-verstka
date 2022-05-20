@@ -1,14 +1,10 @@
 .popup-catalog {
-  padding: 68px!important;
+  padding: 30px!important;
   background: #022869!important;
   max-width: 754px;
   width: 100%;
   margin: auto;
   position: relative;
-  button.carousel__button.is-close {
-    top: 30px;
-    right: 30px;
-  }
   .links-list {
     a {
       font-family: "Inter";
@@ -17,7 +13,6 @@
       color: #FFFFFF;
       display: block;
       width: 100%;
-      margin-bottom: 20px;
 
       &:hover {
         color: #367AF5;
@@ -89,22 +84,12 @@
   .popup-catalog {
     top: 60px;
     padding: 15px!important;
-    max-width: 100%;
-    button.carousel__button.is-close {
-      top: 15px;
-      right: 15px;
-    }
     .links-list {
       margin-top: 30px;
       a {
         padding: 8px 0;
         border-bottom: 1px solid #FFFFFF;
-        font-size: 16px;
-        line-height: 19px;
       }
     }
-  }
-  .fancybox__slide {
-    padding: 0!important;
   }
 }
