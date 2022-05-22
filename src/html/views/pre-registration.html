@@ -1,0 +1,193 @@
+<link rel="stylesheet" href="../../scss/pages/_pre-registration.scss"><% var data = {
+title: "Регистрация | Заголовок",
+author: "mws",
+home: "Главная",
+curpage: "Регистрация"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<style>
+    header, footer {
+        display: none;
+    }
+</style>
+        
+        <section class="prereg-header">
+            <div class="container">
+                <div class="img-wrapper">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="reg prereg">
+            <div class="container">
+                <div class="col-12">
+                    <h2 class="title">Рынок услуг по ликвидности</h2>
+                    <div class="desc">
+                        Торговая площадка товарных остатков и излишиков промышленной отрасли
+                    </div>
+                </div>
+                <div class="col-6 col-m-12">
+                    <div class="list">
+                        <div class="item">Прямой доступ к закрытым лотам</div>
+                        <div class="item">Гарантия безопасности сделки</div>
+                        <div class="item">Проверенные поставщики</div>
+                    </div>
+                </div>
+               <div class="col-6 col-m-12">
+                   <div class="list">
+                       <div class="item">500+ категорий активов</div>
+                       <div class="item">Сверхвыгодные предложения</div>
+                       <div class="item">Интегрированная логистика</div>
+                   </div>
+               </div>
+                    <form action="" class="prereg-form">
+                        <div class="col-12">
+                            <div class="prereg-subtitle">Заявление на регистрацию</div>
+                            <div class="checkboxes-wrapper">
+                                <div class="checkbox">
+                                    <input class="custom-radio" type="radio" name="typepick" id="seller">
+                                    <label for="seller">Продавец</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="custom-radio" type="radio" name="typepick" id="buyer">
+                                    <label for="buyer">Покупатель</label>
+                                </div>
+                            </div>
+                            <div class="prereg-block">
+                                <div class="prereg-desc">Выберите тип</div>
+                                <div class="checkboxes-wrapper">
+                                    <div class="checkbox">
+                                        <input class="custom-radio" type="radio" name="typepick" id="self-employed">
+                                        <label for="self-employed">Самозанятый</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="custom-radio" type="radio" name="typepick" id="mid-business">
+                                        <label for="mid-business">Средний бизнес</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="custom-radio" type="radio" name="typepick" id="small-business">
+                                        <label for="small-business">Малый бизнес</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="custom-radio" type="radio" name="typepick" id="big-business">
+                                        <label for="big-business">Крупный бизнес</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="reg_form-inner preregistration-form">
+                                <div class="reg_subtitle">Регистрация как продавца</div>
+                                    <div class="col-12">
+                                        <div class="reg_form-item reg_form-item-wide">
+                                            <span>Наименование организации*</span>
+                                            <input  type="text" name="ФИО">
+                                        </div>
+                                    </div>
+                                   <div class=" col-12 reg-form-items">
+                                       <div class="col-6 col-m-12">
+                                           <div class="reg_form-item">
+                                               <span>ИНН организации*</span>
+                                               <input type="text" name="post">
+                                           </div>
+                                       </div>
+                                       <div class="col-6 col-m-12">
+                                           <div class="reg_form-item">
+                                               <span>Город*</span>
+                                               <input  type="text" name="post">
+                                           </div>
+                                       </div>
+                                   </div>
+                                    <div class="col-12">
+                                        <div class="reg_form-item">
+                                            <span>Фактический адрес*</span>
+                                            <input  type="text" name="phone">
+                                        </div>
+                                    </div>
+                                <div class="col-12">
+                                    <div class="reg_form-item">
+                                        <span>Юридический адрес*</span>
+                                        <input  type="text" name="phone">
+                                    </div>
+                                </div>
+                                <div class="col-12 reg-form-items">
+                                    <div class="col-6 col-m-12">
+                                        <div class="reg_form-item">
+                                            <span>Телефон*</span>
+                                            <input type="text" name="e-mail">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-m-12">
+                                        <div class="reg_form-item">
+                                            <span>Email*</span>
+                                            <input type="text" name="e-mail">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="upload-files">
+                                        <input type="file" id="fileMulti" name="fileMulti[]" multiple required>
+                                        <span id="outputMulti"></span>
+                                        <input type="submit" name="" class="submit-btn" value="Добавить изображения">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="reg-info">
+                                        <input class="submit-btn" type="submit" value="Зарегистрироваться">
+                                        <div class="desc">
+                                            <p class="reg_text">
+                                                Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой
+                                                конфиденциальности
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            <div class="col-12">
+                <div class="prereg-info">
+                    <div class="col-12">
+                        <p>Будьте в числе первых 500 компаний.</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="upper-text">
+                            <a href="#">РЕГИСТРИРУЙТЕСЬ</a>
+                            И ПОЛУЧИТЕ ЛУЧШИЕ УСЛОВИЯ НА 1 ГОД
+                        </p>
+                    </div>
+                    <div class="mobile-hidden">
+                        <div class="col-12">
+                            <div class="date">
+                                <i style="background-image:url(/img/icons/prereg-ico-date.svg)"></i>
+                                Старт 15 июня
+                            </div>
+                            <p class="text">Ожидайте оповещение на электронную почту</p>
+                        </div>
+                    </div>
+                    <div class="pc-hidden">
+                        <div class="col-12">
+                            <div class="date">
+                                <i style="background-image:url(/img/icons/prereg-ico-date.svg)"></i>
+                                <div class="mobile-text">
+                                    Старт 15 июня
+                                    <p>Ожидайте оповещение на электронную почту</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
+
+

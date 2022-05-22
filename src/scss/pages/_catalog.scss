@@ -16,8 +16,10 @@
     border-radius: 10px;
     height: 357px;
     margin-bottom: 30px;
-    min-width: 264px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &:hover .catalog-links-list {
       display: block;
@@ -35,25 +37,43 @@
       transition: 0.5s;
       padding: 20px 8px;
 
-      a {
-        font-family: "Inter";
-        font-size: 14px;
-        line-height: 20px;
-        color: #000000;
-        display: block;
-        width: 100%;
-        border-bottom: 1px solid #808080;
+      .links-wrapper {
+        a {
+          font-family: "Inter";
+          font-size: 14px;
+          line-height: 20px;
+          color: #000000;
+          display: block;
+          width: 100%; 
 
-        &:hover {
-          color: #367AF5;
-          border-bottom: 1px solid #367AF5;
-        }
+          &:not(:last-child) {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #808080;
+          }
+           &:hover {
+            color: #367AF5;
+            border-bottom: 1px solid #367AF5;
+          } 
+          &:last-child:hover {
+            border-bottom: none;
+          } 
+        }   
       }
       .catalog-more {
         color: #777777;
         display: inline;
         border-bottom: 1px solid #777777;
-      }
+        font-family: "Inter";
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+        display: inline-block;
+        &:hover {
+          color: #367AF5;
+          border-bottom: 1px solid #367AF5;
+        } 
+      }  
     }
     .catalog-title {
       font-family: "Inter";
@@ -62,6 +82,7 @@
       line-height: 29px;
       text-align: center;
       color: #000000;
+      margin-bottom: 50px;
       margin-top: 12px;
     }
 
