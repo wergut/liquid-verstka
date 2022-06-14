@@ -1,0 +1,123 @@
+<% var data = {
+title: "Личный кабинет | Сведения о компании",
+author: "mws",
+home: "Главная",
+curpage: "Личный кабинет"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+
+<section class="account-section">
+    <div class="container">
+        <div class="col-12">
+            <h1>Личный кабинет</h1>
+            <h2>Торги</h2>
+        </div>
+        <div class="col-8 col-m-12">
+            <div class="select-lots">
+                <select name="">
+                    <option value="Все">Все</option>
+                </select>
+            </div>
+            <div class="account-inner account-bets">
+                <div class="lot-items">
+                    <div class="item-wrapper">
+                        <div class="lot-item">
+                            <div class="img-wrapper">
+                                <img src="img/delivery.png" alt="">
+                            </div>
+                            <div class="info-wrapper">
+                                <div class="item-info">
+                                    <div class="item-title">Гидравлический насос СУЦУ (Мал.)</div>
+                                    <p>Номер объявления:
+                                        <span>55672</span>
+                                    </p>
+                                </div>
+                                <div class="item-info item-info-right">
+                                    <p>
+                                        Цена к оплате:
+                                        <span>521 000 ₽</span>
+                                    </p>
+                                    <p>
+                                        Кол-во:
+                                        <span class="quantity">11 шт</span>
+                                    </p>
+                                </div>
+                                <div class="lot-btns btns-pc">
+                                    <input class="btn-blue btn-order" value="В корзину" type="text">
+                                    <input class="btn-blue btn-order" value="Оплатить сейчас" type="text">
+                                    <input class="btn-order btn-refuse" value="Отказаться" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lot-btns btns-mobile">
+                            <input class="btn-blue btn-order" value="В корзину" type="text">
+                            <input class="btn-blue btn-order" value="Оплатить сейчас" type="text">
+                            <input class="btn-order btn-refuse" value="Отказаться" type="text">
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="lot-item">
+                            <div class="img-wrapper">
+                                <img src="img/delivery.png" alt="">
+                            </div>
+                            <div class="info-wrapper">
+                                <div class="item-info">
+                                    <div class="item-title">Гидравлический насос СУЦУ (Мал.)</div>
+                                    <p>Номер объявления:
+                                        <span>55672</span>
+                                    </p>
+                                </div>
+                                <div class="item-info item-info-right">
+                                    <p>
+                                        Цена к оплате:
+                                        <span>521 000 ₽</span>
+                                    </p>
+                                    <p>
+                                        Кол-во:
+                                        <span class="quantity">11 шт</span>
+                                    </p>
+                                </div>
+                                <div class="lot-btns btns-pc">
+                                    <input class="btn-blue btn-order" value="В корзину" type="text">
+                                    <input class="btn-blue btn-order" value="Оплатить сейчас" type="text">
+                                    <input class="btn-order btn-refuse" value="Отказаться" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lot-btns btns-mobile">
+                            <input class="btn-blue btn-order" value="В корзину" type="text">
+                            <input class="btn-blue btn-order" value="Оплатить сейчас" type="text">
+                            <input class="btn-order btn-refuse" value="Отказаться" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-m-12">
+            <div class="navigation">
+                <a href="#" class="nav-item">Сведения о компании</a>
+                <a href="#" class="nav-item">Настройка аккаунта</a>
+                <a href="#" class="nav-item active">Мои ставки</a>
+                <a href="#" class="nav-item">Мои объявления</a>
+                <a href="#" class="nav-item">Избранное</a>
+                <a href="#" class="nav-item">Уведомления</a>
+                <a href="#" class="nav-item">Корзина</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -31,7 +31,7 @@
 
 .contacts_content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .contacts_item {
@@ -235,16 +235,21 @@
 @media (max-width: 540px) {
   .contacts {
     padding: 60px 0 50px 0;
+    .container {
+      padding: 0;
+    }
     .contacts_title {
       font-size: 28px;
       line-height: 34px;
       margin-bottom: 30px;
+      padding: 0 20px;
     }
     .contacts_subtitle {
       font-size: 16px;
       line-height: 19px;
       text-align: center;
       margin-bottom: 30px;
+      padding: 0 20px;
     }
   }
   .contacts_content {
@@ -269,19 +274,22 @@
     margin-bottom: 50px;
   }
   .contacts-title-mobile {
-    text-align: center;
-    margin-bottom: 30px;
-    display: block;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: #000000;
+    color: #FFFFFF;
+    background: #001F4D;
+    padding: 18px 10px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
   }
   .contacts_content-right {
 
     .question_form {
       background-color: transparent;
-      padding: 0;
+      padding: 0 20px;
 
       a {
         max-width: 100%;

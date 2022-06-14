@@ -1,10 +1,8 @@
 .account-section {
 	.account-inner.favorite-lots {
-		border-radius: 0 5px 5px 5px;
-    	padding: 30px 35px;
-    	position: relative;
-    	z-index: 0;
-    	margin-left: -1px;
+		border: none;
+		padding: 0;
+		margin-top: 10px;
 
     	.catalog-wrapper {
     		.catalog-item {
@@ -17,23 +15,18 @@
     	}
 	}
 	.account-inner.favorites-organizations {
-		border-radius: 0 5px 5px 5px;
-    	padding: 30px 35px;
-    	position: relative;
-    	z-index: 0;
-    	margin-left: -1px;
-
+		border: none;
+		padding: 0;
+		margin-top: 10px;
     	.organization-items {
-    		background: #e8e8e8;
-    		border: 1px solid #7b7b7b;
-    		margin-top: 17px;
-    		min-height: 335px;
     		.organization-item {
     			display: flex;
     			align-items: center;
     			background: #fff;
     			padding: 5px 32px 5px 8px;
-    			border-bottom: 1px solid #7b7b7b;
+				border: 1px solid #000000;
+				border-radius: 5px;
+				margin-bottom: 10px;
     			.img-wrapper {
     				max-width: 54px;
     				width: 100%;
@@ -56,8 +49,9 @@
 						font-size: 16px;
 						line-height: 19px;
 						color: #000000;
-    					span.quantity {
-    						color: #367af5;
+						font-weight: 300;
+    					span {
+    						font-weight: 500;
     					}
     				}
     			}

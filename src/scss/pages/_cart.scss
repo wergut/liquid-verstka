@@ -38,7 +38,6 @@
         }
     }
     .cart-order {
-        margin-left: 30px;
         width: 100%;
         border: 1px solid #7B7B7B;
         border-radius: 5px;
@@ -268,6 +267,22 @@
     }
 }
 
+.account-section .account-inner.account-bets .lot-items .item-wrapper.cart-item {
+    padding: 10px 20px 10px 10px;
+    .lot-item .img-wrapper {
+        max-width: 100px;
+        width: 100%;
+        height: 100px;
+        margin-left: 20px;
+
+        img {
+            max-width: 100px;
+            border-radius: 1px;
+            width: 100%;
+        }
+    }
+}
+
 
 @media (max-width: 540px) {
     .cart-section {
@@ -395,5 +410,24 @@
             font-size: 16px;
             line-height: 19px;
         }
+    }
+    .account-section .account-inner.account-bets .lot-items .item-wrapper.cart-item .lot-item .img-wrapper {
+        height: 78px;
+        max-width: 78px;
+        margin-left: 0;
+        align-self: flex-start;
+
+        img {
+            max-width: 78px;
+        }
+    }
+    .cart-section label.custom-checkbox {
+        order: 1;
+    }
+    .cart-section .cart-checkbox {
+        margin-bottom: 0;
+    }
+    .account-section .account-inner.account-bets .lot-items .item-wrapper.cart-item {
+        padding: 15px 10px;
     }
 }
