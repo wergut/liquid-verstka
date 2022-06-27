@@ -19,18 +19,29 @@ curpage: "Оформление заказа"
                             <p>Информация о доставке 1 из 2 шагов</p>
                         </div>
                     </div>
-                    <div class="delivery-address disable">
-                        <div class="title">Выберите адрес доставки</div>
+
+                    <div class="delivery-address edit">
+                        <div class="title">Выберите способ получения</div>
                         <div class="address-item">
                             <div class="address-title">Адрес доставки</div>
-                            <div class="inner">
-                                <div class="info">
-                                    <span>Сергеев Олег Александрович</span>
-                                    <span>Г. Воронеж, ул. Некрасова 12, 1 этаж, 170020</span>
-                                    <span>Россия</span>
-                                    <span>+79175263274</span>
+                            <div class="edit-address">
+                                <div class="input-wrapper">
+                                    <div class="name">ФИО заказчика</div>
+                                    <input type="text" placeholder="Сергеев Олег Александрович">
                                 </div>
-                                <button class="edit-btn">Изменить</button>
+                                <div class="input-wrapper">
+                                    <div class="name">Адрес доставки</div>
+                                    <textarea type="text" placeholder="Г. Воронеж, ул. Некрасова 12, 1 этаж, 170020"></textarea>
+                                </div>
+                                <div class="input-wrapper">
+                                    <div class="name">Страна</div>
+                                    <input type="text" placeholder="Россия">
+                                </div>
+                                <div class="input-wrapper">
+                                    <div class="name">Номер телефона</div>
+                                    <input type="text" placeholder="+79175263274">
+                                </div>
+                                <input value="Изменить" type="submit" class="submit-btn">
                             </div>
                         </div>
                     </div>
