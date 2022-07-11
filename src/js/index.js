@@ -1,7 +1,7 @@
 $(function () {
 
     // Аккордион меню
-    $('.accordion_header').on('click', function () {
+    $('.accordion_item').on('click', function () {
         let orderContent = $(this).closest('.accordion_item').find('.accordion_content');
         orderContent.slideToggle();
         $(this).toggleClass('active');
@@ -47,6 +47,17 @@ $(document).ready(function() {
         pagination: {
             el: '.swiper-pagination',
             clickable: true
+        },
+    });
+    var swiper3 = new Swiper(".swiper-industries", {
+        slidesPerView: 4,
+        grid: {
+            rows: 2,
+        },
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
     });
 
